@@ -1,0 +1,33 @@
+Version 2.6
+Micron 2000
+15
+3 7 8 0 0 0 0 0 0 1 0 0 1 100000 800000 104000 1044000
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 320000 80000 324000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 328000 80000 332000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 400000 80000 404000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 408000 80000 412000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 480000 80000 484000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 488000 80000 492000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 560000 80000 564000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 568000 80000 572000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 640000 80000 644000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 648000 80000 652000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 720000 80000 724000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 728000 80000 732000 599960
+Cut VSS stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 800000 80000 804000 599960
+Cut VDD stripe to avoid violation
+3 7 8 0 0 0 0 0 0 1 0 0 1 808000 80000 812000 599960
+Cut VSS stripe to avoid violation

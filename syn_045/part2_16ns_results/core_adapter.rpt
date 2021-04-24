@@ -1,0 +1,1566 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'core_adapter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : reference
+Design : core_adapter
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 14:14:30 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000      32     34.048000  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+AND3_X2            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      27     35.910001  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000       5     10.640000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     166    750.651973  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      44     23.408000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      14     11.172000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000     165    307.229998  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000      48     63.840002  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+fpu_double                    54481.055614       1  54481.055614  h, n
+-----------------------------------------------------------------------------
+Total 19 references                                 55736.841589
+
+****************************************
+Design: fpu_double 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000      10     10.640000  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     274    364.420012  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000      64    136.192001  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      12      9.576000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     358   1618.875941  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     367    195.244002  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      11      8.778000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       2      2.128000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+fpu_add                        5683.887920       1   5683.887920  h, n
+fpu_double_DW01_inc_0            15.428000       1     15.428000  h
+fpu_exceptions                 3797.415926       1   3797.415926  h, n
+fpu_mul                       33846.637919       1  33846.637919  h, n
+fpu_round                      2064.957974       1   2064.957974  h, n
+fpu_sub                        6685.909918       1   6685.909918  h, n
+-----------------------------------------------------------------------------
+Total 27 references                                 54481.055614
+
+****************************************
+Design: fpu_add 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       2      2.128000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     478    635.740021  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000      65    138.320001  
+BUF_X4             NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      40     31.919999  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000      43     57.190002  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     676   3056.871889  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     672    357.504004  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000      10     13.300000  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000     264    491.567997  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      22     17.556000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000      19     25.270001  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      37     29.525999  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000      39     41.496000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      19     20.216000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000     126    268.128003  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000      14     14.896000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OR3_X4             NangateOpenCellLibrary
+                                  2.926000       1      2.926000  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000      14     22.343999  
+fpu_add_DW01_add_0              251.370000       1    251.370000  h
+fpu_add_DW01_add_1               59.318001       1     59.318001  h
+fpu_add_DW01_inc_0               26.068001       1     26.068001  h
+fpu_add_DW01_inc_1               26.068001       1     26.068001  h
+fpu_add_DW01_sub_0               53.998001       1     53.998001  h
+-----------------------------------------------------------------------------
+Total 34 references                                  5683.887920
+
+****************************************
+Design: fpu_add_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      44    187.264002  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       4      2.128000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      28     22.343999  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NAND3_X2           NangateOpenCellLibrary
+                                  1.862000       4      7.448000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      16     25.535999  
+-----------------------------------------------------------------------------
+Total 8 references                                    251.370000
+
+****************************************
+Design: fpu_add_DW01_add_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      21     16.758000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      10     13.300000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      11     29.260001  
+-----------------------------------------------------------------------------
+Total 3 references                                     59.318001
+
+****************************************
+Design: fpu_add_DW01_inc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       9     23.940001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     26.068001
+
+****************************************
+Design: fpu_add_DW01_inc_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       9     23.940001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     26.068001
+
+****************************************
+Design: fpu_add_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      10     42.560000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      11      5.852000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       2      1.596000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       1      2.660000  
+-----------------------------------------------------------------------------
+Total 5 references                                     53.998001
+
+****************************************
+Design: fpu_double_DW01_inc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       5     13.300000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     15.428000
+
+****************************************
+Design: fpu_exceptions 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       2      2.128000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       5      6.650000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      74     98.420003  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      27     21.545999  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     561   2536.841908  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     256    136.192001  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      16     12.768000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       6     14.364000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000      16     17.024000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000      36     47.880002  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       7      5.586000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000      11     11.704000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      18     23.940001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      92     97.888001  
+OAI21_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000     147    195.510006  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      23     36.707999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000     230    489.440005  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000       6      9.576000  
+-----------------------------------------------------------------------------
+Total 26 references                                  3797.415926
+
+****************************************
+Design: fpu_mul 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       6      6.384000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000      10     10.640000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000    1305   1735.650056  
+AOI211_X1          NangateOpenCellLibrary
+                                  1.330000       5      6.650000  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000       3      4.788000  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000     106    225.568002  
+BUF_X8             NangateOpenCellLibrary
+                                  3.458000       1      3.458000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000     107    142.310005  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000    1704   7705.487720  n
+DFF_X2             NangateOpenCellLibrary
+                                  5.054000      37    186.997996  n
+FA_X1              NangateOpenCellLibrary
+                                  4.256000       5     21.280000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000    2159   1148.588011  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      45     35.909999  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000      37     49.210002  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000      20     47.880001  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000    1803   3357.185979  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000     217    173.165995  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      17     22.610001  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000      11     11.704000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000      14     18.620001  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000     171    136.457996  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000     139    147.896001  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      22     29.260001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      10     10.640000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000     116    154.280005  
+OAI33_X1           NangateOpenCellLibrary
+                                  1.862000       4      7.448000  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000     164    261.743993  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000      53    112.784001  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000      81     86.184001  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000      39     62.243998  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      17     45.220001  
+fpu_mul_DW01_add_0              145.768002       1    145.768002  h
+fpu_mul_DW01_add_1              162.526002       1    162.526002  h
+fpu_mul_DW01_add_2              135.394002       1    135.394002  h
+fpu_mul_DW01_add_3              117.572001       1    117.572001  h
+fpu_mul_DW01_add_4              157.206002       1    157.206002  h
+fpu_mul_DW01_add_5              158.270002       1    158.270002  h
+fpu_mul_DW01_add_6              195.776002       1    195.776002  h
+fpu_mul_DW01_add_7              151.620002       1    151.620002  h
+fpu_mul_DW01_add_8              198.436002       1    198.436002  h
+fpu_mul_DW01_add_9               51.604001       1     51.604001  h
+fpu_mul_DW01_add_10              60.116001       1     60.116001  h
+fpu_mul_DW01_sub_2               65.702001       1     65.702001  h
+fpu_mul_DW_mult_uns_0           922.754002       1    922.754002  h
+fpu_mul_DW_mult_uns_1           840.294002       1    840.294002  h
+fpu_mul_DW_mult_uns_2           834.708002       1    834.708002  h
+fpu_mul_DW_mult_uns_3          1228.920003       1   1228.920003  h
+fpu_mul_DW_mult_uns_4          1100.442003       1   1100.442003  h
+fpu_mul_DW_mult_uns_5          1082.354003       1   1082.354003  h
+fpu_mul_DW_mult_uns_6           151.088000       1    151.088000  h
+fpu_mul_DW_mult_uns_17         3880.674050       1   3880.674050  h
+fpu_mul_DW_mult_uns_18         3880.674050       1   3880.674050  h
+fpu_mul_DW_mult_uns_21         2334.948019       1   2334.948019  h
+-----------------------------------------------------------------------------
+Total 58 references                                 33846.637919
+
+****************************************
+Design: fpu_mul_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      19     80.864001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      23     18.353999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      11     14.630000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      12     31.920001  
+-----------------------------------------------------------------------------
+Total 4 references                                    145.768002
+
+****************************************
+Design: fpu_mul_DW01_add_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      29    123.424001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      14     11.172000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       7     18.620001  
+-----------------------------------------------------------------------------
+Total 4 references                                    162.526002
+
+****************************************
+Design: fpu_mul_DW01_add_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      20     85.120001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      18     14.364000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       9     23.940001  
+-----------------------------------------------------------------------------
+Total 4 references                                    135.394002
+
+****************************************
+Design: fpu_mul_DW01_add_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      25    106.400001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       4      3.192000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       2      5.320000  
+-----------------------------------------------------------------------------
+Total 4 references                                    117.572001
+
+****************************************
+Design: fpu_mul_DW01_add_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      33    140.448001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       6      4.788000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       3      7.980000  
+-----------------------------------------------------------------------------
+Total 4 references                                    157.206002
+
+****************************************
+Design: fpu_mul_DW01_add_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      28    119.168001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      14     11.172000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       7     18.620001  
+-----------------------------------------------------------------------------
+Total 4 references                                    158.270002
+
+****************************************
+Design: fpu_mul_DW01_add_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      25    106.400001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      32     25.535999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      16     21.280001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      16     42.560001  
+-----------------------------------------------------------------------------
+Total 4 references                                    195.776002
+
+****************************************
+Design: fpu_mul_DW01_add_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      33    140.448001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       4      3.192000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       2      5.320000  
+-----------------------------------------------------------------------------
+Total 4 references                                    151.620002
+
+****************************************
+Design: fpu_mul_DW01_add_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      23     97.888001  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      36     28.727999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      18     23.940001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      18     47.880002  
+-----------------------------------------------------------------------------
+Total 4 references                                    198.436002
+
+****************************************
+Design: fpu_mul_DW01_add_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      10     42.560000  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       2      5.320000  
+-----------------------------------------------------------------------------
+Total 4 references                                     51.604001
+
+****************************************
+Design: fpu_mul_DW01_add_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000       1      4.256000  r
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      20     15.960000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      10     13.300000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      10     26.600001  
+-----------------------------------------------------------------------------
+Total 4 references                                     60.116001
+
+****************************************
+Design: fpu_mul_DW01_sub_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      12      6.384000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      21     16.758000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      10     13.300000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      11     29.260001  
+-----------------------------------------------------------------------------
+Total 4 references                                     65.702001
+
+****************************************
+Design: fpu_mul_DW_mult_uns_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      63    100.547997  
+AOI221_X4          NangateOpenCellLibrary
+                                  3.458000       3     10.374000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     100    425.600004  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      14     37.240001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      63     33.516000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       9      7.182000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      19     15.162000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      78    103.740003  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       4      8.512000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       4      6.384000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      94    150.023996  
+-----------------------------------------------------------------------------
+Total 17 references                                   922.754002
+
+****************************************
+Design: fpu_mul_DW_mult_uns_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      45     71.819998  
+AOI221_X4          NangateOpenCellLibrary
+                                  3.458000       3     10.374000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      90    383.040004  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      14     37.240001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      59     31.388000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       9      7.182000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      17     13.566000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      60     79.800003  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      12     19.151999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       4      8.512000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       4      6.384000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      86    137.255996  
+-----------------------------------------------------------------------------
+Total 17 references                                   840.294002
+
+****************************************
+Design: fpu_mul_DW_mult_uns_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      48     76.607998  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      90    383.040004  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      14     37.240001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      59     31.388000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       9      7.182000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      17     13.566000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      60     79.800003  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      12     19.151999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       4      8.512000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       4      6.384000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      86    137.255996  
+-----------------------------------------------------------------------------
+Total 16 references                                   834.708002
+
+****************************************
+Design: fpu_mul_DW_mult_uns_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      20     26.600001  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      60     95.759997  
+AOI221_X4          NangateOpenCellLibrary
+                                  3.458000      23     79.533999  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     125    532.000005  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      17     45.220001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      76     40.432000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       7      5.586000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       5      3.990000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000     100    133.000004  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      19     30.323999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       6     12.768000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000     115    183.539995  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       7     11.172000  
+-----------------------------------------------------------------------------
+Total 18 references                                  1228.920003
+
+****************************************
+Design: fpu_mul_DW_mult_uns_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      28     37.240001  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      53     84.587998  
+AOI221_X4          NangateOpenCellLibrary
+                                  3.458000      10     34.579999  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     113    480.928005  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      17     45.220001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      72     38.304000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       7      5.586000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       5      3.990000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      80    106.400003  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      27     43.091999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       6     12.768000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000     105    167.579995  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       7     11.172000  
+-----------------------------------------------------------------------------
+Total 18 references                                  1100.442003
+
+****************************************
+Design: fpu_mul_DW_mult_uns_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      28     37.240001  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      63    100.547997  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     113    480.928005  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      17     45.220001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      74     39.368000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       7      5.586000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       6      4.788000  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000      11     14.630000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      80    106.400003  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      27     43.091999  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000       6     12.768000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000     105    167.579995  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       7     11.172000  
+-----------------------------------------------------------------------------
+Total 17 references                                  1082.354003
+
+****************************************
+Design: fpu_mul_DW_mult_uns_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      22     93.632001  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       2      5.320000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      26     13.832000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      48     38.303999  
+-----------------------------------------------------------------------------
+Total 4 references                                    151.088000
+
+****************************************
+Design: fpu_mul_DW_mult_uns_17 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+AOI21_X2           NangateOpenCellLibrary
+                                  1.862000       8     14.896000  
+AOI21_X4           NangateOpenCellLibrary
+                                  3.458000      31    107.197998  
+BUF_X4             NangateOpenCellLibrary
+                                  1.862000      23     42.826000  
+BUF_X32            NangateOpenCellLibrary
+                                 13.034000      30    391.020012  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      17     13.566000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     168    715.008007  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       7     18.620001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       6      3.192000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000     103    136.990004  
+INV_X32            NangateOpenCellLibrary
+                                  8.778000      75    658.349991  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       8      6.384000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000     103    246.582006  
+NOR2_X4            NangateOpenCellLibrary
+                                  2.394000      62    148.428003  
+OAI21_X4           NangateOpenCellLibrary
+                                  3.458000      50    172.899997  
+OAI22_X2           NangateOpenCellLibrary
+                                  2.394000     222    531.468012  
+OAI22_X4           NangateOpenCellLibrary
+                                  4.522000       1      4.522000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000     221    587.860019  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+XOR2_X2            NangateOpenCellLibrary
+                                  2.394000      16     38.304001  
+-----------------------------------------------------------------------------
+Total 23 references                                  3880.674050
+
+****************************************
+Design: fpu_mul_DW_mult_uns_18 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+AOI21_X2           NangateOpenCellLibrary
+                                  1.862000       8     14.896000  
+AOI21_X4           NangateOpenCellLibrary
+                                  3.458000      31    107.197998  
+BUF_X4             NangateOpenCellLibrary
+                                  1.862000      23     42.826000  
+BUF_X32            NangateOpenCellLibrary
+                                 13.034000      30    391.020012  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      17     13.566000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     168    715.008007  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       7     18.620001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       6      3.192000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000     103    136.990004  
+INV_X32            NangateOpenCellLibrary
+                                  8.778000      75    658.349991  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       8      6.384000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000     103    246.582006  
+NOR2_X4            NangateOpenCellLibrary
+                                  2.394000      62    148.428003  
+OAI21_X4           NangateOpenCellLibrary
+                                  3.458000      50    172.899997  
+OAI22_X2           NangateOpenCellLibrary
+                                  2.394000     222    531.468012  
+OAI22_X4           NangateOpenCellLibrary
+                                  4.522000       1      4.522000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000     221    587.860019  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+XOR2_X2            NangateOpenCellLibrary
+                                  2.394000      16     38.304001  
+-----------------------------------------------------------------------------
+Total 23 references                                  3880.674050
+
+****************************************
+Design: fpu_mul_DW_mult_uns_21 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000      33     79.002002  
+AND3_X4            NangateOpenCellLibrary
+                                  2.926000       8     23.408001  
+AOI21_X4           NangateOpenCellLibrary
+                                  3.458000      26     89.907999  
+AOI22_X2           NangateOpenCellLibrary
+                                  2.394000       8     19.152000  
+AOI222_X2          NangateOpenCellLibrary
+                                  3.724000     120    446.879997  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     153    651.168006  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      19     50.540002  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      93     74.213998  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000      47    112.518003  
+NOR2_X4            NangateOpenCellLibrary
+                                  2.394000      40     95.760002  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000     152    161.728002  
+OAI21_X4           NangateOpenCellLibrary
+                                  3.458000      16     55.327999  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+OR2_X4             NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       7     11.172000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      13     34.580001  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      26     41.495999  
+XOR2_X2            NangateOpenCellLibrary
+                                  2.394000     151    361.494008  
+-----------------------------------------------------------------------------
+Total 20 references                                  2334.948019
+
+****************************************
+Design: fpu_round 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     142    188.860006  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000      64    136.192001  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      12      9.576000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     258   1166.675958  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     150     79.800001  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      64     68.096001  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      52     69.160002  
+OAI33_X1           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+fpu_round_DW01_add_0            294.728004       1    294.728004  h
+fpu_round_DW01_inc_0             28.728001       1     28.728001  h
+-----------------------------------------------------------------------------
+Total 17 references                                  2064.957974
+
+****************************************
+Design: fpu_round_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X2             NangateOpenCellLibrary
+                                  0.798000     106     84.587998  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      52     69.160002  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      53    140.980005  
+-----------------------------------------------------------------------------
+Total 3 references                                    294.728004
+
+****************************************
+Design: fpu_round_DW01_inc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      10     26.600001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     28.728001
+
+****************************************
+Design: fpu_sub 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000      13     13.832000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000      15     23.939999  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000      16     17.024000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     296    393.680013  
+AOI211_X1          NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000      93    148.427996  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000      65    138.320001  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      76     60.647998  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000      21     27.930001  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     689   3115.657887  n
+FA_X1              NangateOpenCellLibrary
+                                  4.256000       5     21.280000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     726    386.232004  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      16     12.768000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000       3      7.182000  
+INV_X16            NangateOpenCellLibrary
+                                  4.522000       1      4.522000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000      42     78.204000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      55     43.889999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       5      6.650000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       5     11.970000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000      15     15.960000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000      35     46.550002  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      67     53.465999  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+NOR2_X4            NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000      16     17.024000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      11     14.630000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      31     32.984000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000     414    550.620018  
+OAI33_X1           NangateOpenCellLibrary
+                                  1.862000       8     14.896000  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000      36     47.880002  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000     222    354.311990  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000     207    440.496004  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+OR2_X4             NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       6     15.960001  
+fpu_sub_DW01_sub_1              287.014001       1    287.014001  h
+fpu_sub_DW01_sub_2               53.200001       1     53.200001  h
+fpu_sub_DW_cmp_3                178.486001       1    178.486001  h
+-----------------------------------------------------------------------------
+Total 42 references                                  6685.909918
+
+****************************************
+Design: fpu_sub_DW01_sub_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      42    178.752002  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      56     29.792000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      30     23.939999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+NAND3_X2           NangateOpenCellLibrary
+                                  1.862000       5      9.310000  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       1      2.660000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      22     35.111999  
+-----------------------------------------------------------------------------
+Total 9 references                                    287.014001
+
+****************************************
+Design: fpu_sub_DW01_sub_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      11     46.816000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      12      6.384000  
+-----------------------------------------------------------------------------
+Total 2 references                                     53.200001
+
+****************************************
+Design: fpu_sub_DW_cmp_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI221_X1          NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      70     37.240000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      26     20.747999  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000      24     25.536000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000       1      0.798000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      46     48.944000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      15     19.950001  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000       7      9.310000  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000       3      4.788000  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+-----------------------------------------------------------------------------
+Total 15 references                                   178.486001
+1
+Information: Updating design information... (UID-85)
+Warning: Design 'core_adapter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : core_adapter
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 14:14:31 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: my_fpu_double/i_fpu_add/small_shift_3_reg[2]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: my_fpu_double/i_fpu_add/sum_reg[55]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  core_adapter       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                          Cap     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  my_fpu_double/i_fpu_add/small_shift_3_reg[2]/CK (DFF_X1)
+                                                          0.00      0.00 #     0.00 r
+  my_fpu_double/i_fpu_add/small_shift_3_reg[2]/Q (DFF_X1)
+                                                6.08      0.03      0.26       0.26 f
+  my_fpu_double/i_fpu_add/add_168/B[2] (fpu_add_DW01_add_0)         0.00       0.26 f
+  my_fpu_double/i_fpu_add/add_168/U56/ZN (NAND2_X1)
+                                                1.95      0.03      0.07       0.32 r
+  my_fpu_double/i_fpu_add/add_168/U57/ZN (INV_X1)
+                                                2.94      0.01      0.04       0.36 f
+  my_fpu_double/i_fpu_add/add_168/U1_3/CO (FA_X1)
+                                                6.37      0.06      0.31       0.67 f
+  my_fpu_double/i_fpu_add/add_168/U41/ZN (NAND2_X1)
+                                                3.77      0.05      0.11       0.78 r
+  my_fpu_double/i_fpu_add/add_168/U42/ZN (NAND3_X2)
+                                                6.37      0.04      0.10       0.88 f
+  my_fpu_double/i_fpu_add/add_168/U47/ZN (NAND2_X1)
+                                                1.91      0.03      0.08       0.96 r
+  my_fpu_double/i_fpu_add/add_168/U48/ZN (NAND3_X1)
+                                                2.94      0.03      0.08       1.04 f
+  my_fpu_double/i_fpu_add/add_168/U1_6/CO (FA_X1)
+                                                2.94      0.05      0.29       1.33 f
+  my_fpu_double/i_fpu_add/add_168/U1_7/CO (FA_X1)
+                                                2.94      0.05      0.30       1.63 f
+  my_fpu_double/i_fpu_add/add_168/U1_8/CO (FA_X1)
+                                                2.94      0.05      0.30       1.92 f
+  my_fpu_double/i_fpu_add/add_168/U1_9/CO (FA_X1)
+                                                2.94      0.05      0.30       2.22 f
+  my_fpu_double/i_fpu_add/add_168/U1_10/CO (FA_X1)
+                                                2.94      0.05      0.30       2.51 f
+  my_fpu_double/i_fpu_add/add_168/U1_11/CO (FA_X1)
+                                                2.94      0.05      0.30       2.81 f
+  my_fpu_double/i_fpu_add/add_168/U1_12/CO (FA_X1)
+                                                2.94      0.05      0.30       3.10 f
+  my_fpu_double/i_fpu_add/add_168/U1_13/CO (FA_X1)
+                                                2.94      0.05      0.30       3.40 f
+  my_fpu_double/i_fpu_add/add_168/U1_14/CO (FA_X1)
+                                                2.94      0.05      0.30       3.69 f
+  my_fpu_double/i_fpu_add/add_168/U1_15/CO (FA_X1)
+                                                2.94      0.05      0.30       3.99 f
+  my_fpu_double/i_fpu_add/add_168/U1_16/CO (FA_X1)
+                                                2.94      0.05      0.30       4.28 f
+  my_fpu_double/i_fpu_add/add_168/U1_17/CO (FA_X1)
+                                                2.94      0.05      0.30       4.58 f
+  my_fpu_double/i_fpu_add/add_168/U1_18/CO (FA_X1)
+                                                2.94      0.05      0.30       4.87 f
+  my_fpu_double/i_fpu_add/add_168/U1_19/CO (FA_X1)
+                                                6.37      0.06      0.32       5.19 f
+  my_fpu_double/i_fpu_add/add_168/U29/ZN (NAND2_X1)
+                                                3.77      0.05      0.11       5.30 r
+  my_fpu_double/i_fpu_add/add_168/U30/ZN (NAND3_X2)
+                                                6.37      0.04      0.10       5.41 f
+  my_fpu_double/i_fpu_add/add_168/U35/ZN (NAND2_X1)
+                                                1.91      0.03      0.08       5.49 r
+  my_fpu_double/i_fpu_add/add_168/U36/ZN (NAND3_X1)
+                                                2.94      0.03      0.08       5.57 f
+  my_fpu_double/i_fpu_add/add_168/U1_22/CO (FA_X1)
+                                                2.94      0.05      0.29       5.86 f
+  my_fpu_double/i_fpu_add/add_168/U1_23/CO (FA_X1)
+                                                2.94      0.05      0.30       6.15 f
+  my_fpu_double/i_fpu_add/add_168/U1_24/CO (FA_X1)
+                                                2.94      0.05      0.30       6.45 f
+  my_fpu_double/i_fpu_add/add_168/U1_25/CO (FA_X1)
+                                                2.94      0.05      0.30       6.74 f
+  my_fpu_double/i_fpu_add/add_168/U1_26/CO (FA_X1)
+                                                2.94      0.05      0.30       7.04 f
+  my_fpu_double/i_fpu_add/add_168/U1_27/CO (FA_X1)
+                                                2.94      0.05      0.30       7.33 f
+  my_fpu_double/i_fpu_add/add_168/U1_28/CO (FA_X1)
+                                                2.94      0.05      0.30       7.63 f
+  my_fpu_double/i_fpu_add/add_168/U1_29/CO (FA_X1)
+                                                2.94      0.05      0.30       7.92 f
+  my_fpu_double/i_fpu_add/add_168/U1_30/CO (FA_X1)
+                                                2.94      0.05      0.30       8.22 f
+  my_fpu_double/i_fpu_add/add_168/U1_31/CO (FA_X1)
+                                                6.37      0.06      0.32       8.54 f
+  my_fpu_double/i_fpu_add/add_168/U17/ZN (NAND2_X1)
+                                                3.77      0.05      0.11       8.65 r
+  my_fpu_double/i_fpu_add/add_168/U18/ZN (NAND3_X2)
+                                                6.37      0.04      0.10       8.75 f
+  my_fpu_double/i_fpu_add/add_168/U23/ZN (NAND2_X1)
+                                                1.91      0.03      0.08       8.83 r
+  my_fpu_double/i_fpu_add/add_168/U24/ZN (NAND3_X1)
+                                                2.94      0.03      0.08       8.91 f
+  my_fpu_double/i_fpu_add/add_168/U1_34/CO (FA_X1)
+                                                2.94      0.05      0.29       9.20 f
+  my_fpu_double/i_fpu_add/add_168/U1_35/CO (FA_X1)
+                                                2.94      0.05      0.30       9.49 f
+  my_fpu_double/i_fpu_add/add_168/U1_36/CO (FA_X1)
+                                                2.94      0.05      0.30       9.79 f
+  my_fpu_double/i_fpu_add/add_168/U1_37/CO (FA_X1)
+                                                2.94      0.05      0.30      10.08 f
+  my_fpu_double/i_fpu_add/add_168/U1_38/CO (FA_X1)
+                                                2.94      0.05      0.30      10.38 f
+  my_fpu_double/i_fpu_add/add_168/U1_39/CO (FA_X1)
+                                                2.94      0.05      0.30      10.67 f
+  my_fpu_double/i_fpu_add/add_168/U1_40/CO (FA_X1)
+                                                2.94      0.05      0.30      10.97 f
+  my_fpu_double/i_fpu_add/add_168/U1_41/CO (FA_X1)
+                                                2.94      0.05      0.30      11.27 f
+  my_fpu_double/i_fpu_add/add_168/U1_42/CO (FA_X1)
+                                                2.94      0.05      0.30      11.56 f
+  my_fpu_double/i_fpu_add/add_168/U1_43/CO (FA_X1)
+                                                6.37      0.06      0.32      11.88 f
+  my_fpu_double/i_fpu_add/add_168/U5/ZN (NAND2_X1)
+                                                3.77      0.05      0.11      11.99 r
+  my_fpu_double/i_fpu_add/add_168/U6/ZN (NAND3_X2)
+                                                6.37      0.04      0.10      12.09 f
+  my_fpu_double/i_fpu_add/add_168/U11/ZN (NAND2_X1)
+                                                1.91      0.03      0.08      12.17 r
+  my_fpu_double/i_fpu_add/add_168/U12/ZN (NAND3_X1)
+                                                2.94      0.03      0.08      12.25 f
+  my_fpu_double/i_fpu_add/add_168/U1_46/CO (FA_X1)
+                                                2.94      0.05      0.29      12.54 f
+  my_fpu_double/i_fpu_add/add_168/U1_47/CO (FA_X1)
+                                                2.94      0.05      0.30      12.84 f
+  my_fpu_double/i_fpu_add/add_168/U1_48/CO (FA_X1)
+                                                2.94      0.05      0.30      13.13 f
+  my_fpu_double/i_fpu_add/add_168/U1_49/CO (FA_X1)
+                                                2.94      0.05      0.30      13.43 f
+  my_fpu_double/i_fpu_add/add_168/U1_50/CO (FA_X1)
+                                                2.94      0.05      0.30      13.72 f
+  my_fpu_double/i_fpu_add/add_168/U1_51/CO (FA_X1)
+                                                2.94      0.05      0.30      14.02 f
+  my_fpu_double/i_fpu_add/add_168/U1_52/CO (FA_X1)
+                                                2.94      0.05      0.30      14.31 f
+  my_fpu_double/i_fpu_add/add_168/U1_53/CO (FA_X1)
+                                                2.94      0.05      0.30      14.61 f
+  my_fpu_double/i_fpu_add/add_168/U1_54/CO (FA_X1)
+                                                3.61      0.05      0.30      14.91 f
+  my_fpu_double/i_fpu_add/add_168/U49/ZN (NAND2_X1)
+                                                1.88      0.04      0.09      15.00 r
+  my_fpu_double/i_fpu_add/add_168/U51/ZN (NAND2_X1)
+                                                1.77      0.02      0.05      15.05 f
+  my_fpu_double/i_fpu_add/add_168/SUM[55] (fpu_add_DW01_add_0)      0.00      15.05 f
+  my_fpu_double/i_fpu_add/U411/ZN (AOI22_X1)
+                                                1.95      0.10      0.18      15.23 r
+  my_fpu_double/i_fpu_add/U410/ZN (INV_X1)      1.34      0.02      0.05      15.28 f
+  my_fpu_double/i_fpu_add/sum_reg[55]/D (DFF_X1)          0.02      0.01      15.28 f
+  data arrival time                                                           15.28
+
+  clock CLK (rise edge)                                            16.00      16.00
+  clock network delay (ideal)                                       0.00      16.00
+  my_fpu_double/i_fpu_add/sum_reg[55]/CK (DFF_X1)                   0.00      16.00 r
+  library setup time                                               -0.16      15.84
+  data required time                                                          15.84
+  ------------------------------------------------------------------------------------
+  data required time                                                          15.84
+  data arrival time                                                          -15.28
+  ------------------------------------------------------------------------------------
+  slack (MET)                                                                  0.55
+
+
+1
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : core_adapter
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 14:14:32 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+core_adapter           5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   1.4628 mW   (98%)
+  Net Switching Power  =  32.0721 uW    (2%)
+                         ---------
+Total Dynamic Power    =   1.4949 mW  (100%)
+
+Cell Leakage Power     = 790.3699 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.4562e+03            0.4658        2.3418e+05        1.6908e+03  (  73.99%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      6.6516           31.6070        5.5619e+05          594.4489  (  26.01%)
+--------------------------------------------------------------------------------------------------
+Total          1.4628e+03 uW        32.0728 uW     7.9037e+05 nW     2.2853e+03 uW
+1
+ 
+****************************************
+Report : clocks
+Design : core_adapter
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 14:14:32 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK             16.00   {0 8}               d         {clk}
+--------------------------------------------------------------------------------
+1

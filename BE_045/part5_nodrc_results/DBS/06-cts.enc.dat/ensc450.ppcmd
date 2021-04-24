@@ -1,0 +1,86 @@
+# PPCMD 1 
+# sroute -connect { blockPin corePin floatingStripe } -allowJogging true -allowLayerChange true -blockPin useLef -nets {VDD VSS}
+# 5 
+# 16 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 1 
+
+# PPCMD 2 
+# addStripe -nets {VDD VSS} -layer 8 -direction horizontal -width 0.8 -spacing 3 -set_to_set_distance 20
+# 4 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 2000 3600 1296380 1298040 0 
+# 9600 11200 1288780 1290440 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1600 8 0 17680 1289960 40000 0 0 
+# VDD 1600 8 0 10080 1289960 40000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 2 
+
+# PPCMD 3 
+# addStripe -nets {VDD VSS} -layer 7 -direction vertical -width 0.8 -spacing 3 -set_to_set_distance 20
+# 3 
+# 2 
+# 1 
+# 0 
+# 0 
+# 2 
+# BOX_LIST 
+# 2000 2000 1296380 1296440 0 
+# 9600 9600 1288780 1288840 0 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1600 7 0 17480 1290100 40000 0 0 
+# VDD 1600 7 0 9880 1290100 40000 0 0 
+# END_NET_INFO_LIST 
+# END_PPCMD 3 
+
+# PPCMD 4 
+# addRing -nets {VDD VSS} -width 0.8 -spacing 3 -layer 8 -follow io
+# 2 
+# 32 
+# 1 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# VSS 1600 8 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 649990 10400 10400 650020 1289580 650020 649990 1289640 
+# END_RING_PT_INFO_LIST 
+# VDD 1600 8 1 0 0 0 0 0 
+# RING_PT_INFO_LIST 
+# 649990 2800 2800 650020 1297180 650020 649990 1297240 
+# END_RING_PT_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 4 
+
+# PPCMD 5 
+# addRing -nets {VDD VSS} -width 0.8 -spacing 3 -layer 7
+# 1 
+# 32 
+# 0 
+# 0 
+# 0 
+# 0 
+# BOX_LIST 
+# END_BOX_LIST 
+# NET_INFO_LIST 
+# END_NET_INFO_LIST 
+# END_PPCMD 5 
+

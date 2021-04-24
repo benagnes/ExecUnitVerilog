@@ -1,0 +1,72 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Invalid switching activity annotation on constant net(s) is being ignored. (PWR-421)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort high
+        -verbose
+Design : ensc450
+Version: O-2018.06-SP5
+Date   : Mon Apr 19 22:28:53 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+    core_adapter (File: /local-scratch/localhome/escmc38/Desktop/ensc450/project/ensc450_system/BE_045/best_part2_results/core_adapter_slow.db)
+    SRAM (File: /local-scratch/localhome/escmc38/Desktop/ensc450/project/ensc450_system/vhdl/SRAM_Lib/SRAM.db)
+
+Information: The library cell 'SRAM' in the library 'SRAM' is not characterized for internal power. (PWR-227)
+Information: The library cell 'core_adapter' in the library 'core_adapter' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ensc450                5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+ensc450                                   7.874  106.539 7.51e+04  189.465 100.0
+  my_Counter (counter_32_4_1)             1.618   37.400 3.42e+04   73.258  38.7
+    add_83 (counter_32_4_1_DW01_inc_3)    0.163    0.232  956.661    1.351   0.7
+    sub_83_aco (counter_32_4_1_DW01_sub_3)
+                                          0.234    0.686 3.26e+03    4.175   2.2
+    add_83_G2 (counter_32_4_1_DW01_inc_2)
+                                          0.000    0.000  924.104    0.924   0.5
+    sub_83_G2_aco (counter_32_4_1_DW01_sub_2)
+                                          0.000    0.000 3.37e+03    3.375   1.8
+    add_83_G3 (counter_32_4_1_DW01_inc_1)
+                                          0.000    0.000  924.104    0.924   0.5
+    sub_83_G3_aco (counter_32_4_1_DW01_sub_1)
+                                          0.000    0.000 3.37e+03    3.375   1.8
+    add_83_G4 (counter_32_4_1_DW01_inc_0)
+                                          0.000    0.000  924.104    0.924   0.5
+    sub_83_G4_aco (counter_32_4_1_DW01_sub_0)
+                                          0.000    0.000 3.37e+03    3.375   1.8
+  My_DMA (DMA_1_32_32)                    2.356   66.274 3.17e+04  100.306  52.9
+    add_115 (DMA_1_32_32_DW01_add_1)   1.04e-02 2.06e-02 1.14e+03    1.171   0.6
+    add_116 (DMA_1_32_32_DW01_add_0)   1.27e-02 2.44e-02 1.15e+03    1.183   0.6
+    sub_117_S2_aco (DMA_1_32_32_DW01_sub_0)
+                                          0.177    0.187 4.48e+03    4.840   2.6
+  My_bus (ubus_32_32_40001000_400017ff_20000000_200000ff_a0000000_a000000f_b0000000_b00000ff)
+                                          3.882    2.855 9.09e+03   15.824   8.4
+1

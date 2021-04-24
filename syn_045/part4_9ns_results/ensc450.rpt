@@ -1,0 +1,599 @@
+Information: Updating graph... (UID-83)
+ 
+****************************************
+Report : reference
+Design : ensc450
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 15:41:09 2021
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+DMA_1_32_32                    2549.343974       1   2549.343974  h, n
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       2      1.596000  
+SRAM               SRAM       14884.000000       1  14884.000000  b, d
+core_adapter       core_adapter
+                              67574.000000       1  67574.000000  d
+counter_32_4_1                 2234.932009       1   2234.932009  h, n
+ubus_32_32_40001000_400017ff_20000000_200000ff_a0000000_a000000f_b0000000_b00000ff
+                                815.555996       1    815.555996  h, n
+-----------------------------------------------------------------------------
+Total 6 references                                  88059.427979
+
+****************************************
+Design: DMA_1_32_32 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       2      2.128000  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       3      7.182000  
+AND3_X2            NangateOpenCellLibrary
+                                  1.596000       3      4.788000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000      95    126.350004  
+AOI222_X1          NangateOpenCellLibrary
+                                  2.128000      32     68.096001  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     262   1184.763957  n
+DMA_1_32_32_DW01_add_0          169.708000       1    169.708000  h
+DMA_1_32_32_DW01_add_1          167.580000       1    167.580000  h
+DMA_1_32_32_DW01_sub_0          176.358003       1    176.358003  h
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      85     45.220000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       4      3.192000  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+INV_X32            NangateOpenCellLibrary
+                                  8.778000       2     17.556000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      39     31.121999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       9      9.576000  
+NAND3_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000      19     25.270001  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      41     32.717999  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      63     67.032001  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000     192    255.360008  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000      32     42.560001  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      37     59.051998  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+-----------------------------------------------------------------------------
+Total 31 references                                  2549.343974
+
+****************************************
+Design: DMA_1_32_32_DW01_add_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      26    110.656001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      13      6.916000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      12      9.576000  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NAND3_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      12      9.576000  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+-----------------------------------------------------------------------------
+Total 14 references                                   169.708000
+
+****************************************
+Design: DMA_1_32_32_DW01_add_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000       5      3.990000  
+FA_X1              NangateOpenCellLibrary
+                                  4.256000      26    110.656001  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      12      6.384000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       2      1.596000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      15     11.970000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       5      5.320000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      12      9.576000  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+-----------------------------------------------------------------------------
+Total 12 references                                   167.580000
+
+****************************************
+Design: DMA_1_32_32_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      62     49.475999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      31     41.230001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      32     85.120003  
+-----------------------------------------------------------------------------
+Total 4 references                                    176.358003
+
+****************************************
+Design: counter_32_4_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       8     12.768000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     192    255.360008  
+AOI211_X1          NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000     138    624.035977  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      55     29.260000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000       8      6.384000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      39     31.121999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       4      4.256000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000      18     14.364000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      32     42.560001  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000     130    138.320001  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000       8     10.640000  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       7      7.448000  
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+counter_32_4_1_DW01_inc_0        81.928003       1     81.928003  h
+counter_32_4_1_DW01_inc_1        81.928003       1     81.928003  h
+counter_32_4_1_DW01_inc_2        81.928003       1     81.928003  h
+counter_32_4_1_DW01_inc_3        81.928003       1     81.928003  h
+counter_32_4_1_DW01_sub_0       176.358003       1    176.358003  h
+counter_32_4_1_DW01_sub_1       176.358003       1    176.358003  h
+counter_32_4_1_DW01_sub_2       176.358003       1    176.358003  h
+counter_32_4_1_DW01_sub_3       176.358003       1    176.358003  h
+-----------------------------------------------------------------------------
+Total 28 references                                  2234.932009
+
+****************************************
+Design: counter_32_4_1_DW01_inc_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      30     79.800003  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     81.928003
+
+****************************************
+Design: counter_32_4_1_DW01_inc_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      30     79.800003  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     81.928003
+
+****************************************
+Design: counter_32_4_1_DW01_inc_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      30     79.800003  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     81.928003
+
+****************************************
+Design: counter_32_4_1_DW01_inc_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+HA_X1              NangateOpenCellLibrary
+                                  2.660000      30     79.800003  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000       1      1.596000  
+-----------------------------------------------------------------------------
+Total 3 references                                     81.928003
+
+****************************************
+Design: counter_32_4_1_DW01_sub_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      62     49.475999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      31     41.230001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      32     85.120003  
+-----------------------------------------------------------------------------
+Total 4 references                                    176.358003
+
+****************************************
+Design: counter_32_4_1_DW01_sub_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      62     49.475999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      31     41.230001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      32     85.120003  
+-----------------------------------------------------------------------------
+Total 4 references                                    176.358003
+
+****************************************
+Design: counter_32_4_1_DW01_sub_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      62     49.475999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      31     41.230001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      32     85.120003  
+-----------------------------------------------------------------------------
+Total 4 references                                    176.358003
+
+****************************************
+Design: counter_32_4_1_DW01_sub_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+INV_X1             NangateOpenCellLibrary
+                                  0.532000       1      0.532000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      62     49.475999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      31     41.230001  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000      32     85.120003  
+-----------------------------------------------------------------------------
+Total 4 references                                    176.358003
+
+****************************************
+Design: ubus_32_32_40001000_400017ff_20000000_200000ff_a0000000_a000000f_b0000000_b00000ff 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       6      6.384000  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+AND3_X2            NangateOpenCellLibrary
+                                  1.596000       2      3.192000  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000       5      7.980000  
+AND4_X2            NangateOpenCellLibrary
+                                  1.862000       5      9.310000  
+AOI21_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     120    159.600005  
+AOI22_X2           NangateOpenCellLibrary
+                                  2.394000       5     11.970000  
+AOI22_X4           NangateOpenCellLibrary
+                                  4.522000       1      4.522000  
+AOI211_X1          NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+AOI211_X2          NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+AOI221_X4          NangateOpenCellLibrary
+                                  3.458000       1      3.458000  
+BUF_X2             NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      41     32.717999  
+CLKBUF_X2          NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000       7     31.653999  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     141     75.012001  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      13     10.374000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+INV_X8             NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000       3      5.586000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000      38     30.323999  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000      12     15.960001  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       7      7.448000  
+NAND3_X2           NangateOpenCellLibrary
+                                  1.862000       2      3.724000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000     269    214.661994  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000       7      7.448000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000       8      8.512000  
+OAI21_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000       6      7.980000  
+OAI22_X2           NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+OAI221_X1          NangateOpenCellLibrary
+                                  1.596000      64    102.143997  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000       3      3.192000  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+OR2_X4             NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+-----------------------------------------------------------------------------
+Total 39 references                                   815.555996
+1
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -transition_time
+        -capacitance
+Design : ensc450
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 15:41:09 2021
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: EXT_BUSY (input port clocked by CLK)
+  Endpoint: my_core_adapter
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ensc450            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                          Cap     Trans      Incr       Path
+  ------------------------------------------------------------------------------------
+  clock CLK (rise edge)                                             0.00       0.00
+  clock network delay (ideal)                                       0.00       0.00
+  input external delay                                              0.80       0.80 f
+  EXT_BUSY (in)                                 8.19      0.00      0.00       0.80 f
+  My_bus/M1_BUSY (ubus_32_32_40001000_400017ff_20000000_200000ff_a0000000_a000000f_b0000000_b00000ff)
+                                                                    0.00       0.80 f
+  My_bus/U7/ZN (NAND2_X2)                       1.88      0.03      0.05       0.85 r
+  My_bus/U64/ZN (NAND2_X1)                      1.79      0.02      0.05       0.90 f
+  My_bus/U63/ZN (AND2_X2)                       4.98      0.02      0.10       1.00 f
+  My_bus/U51/ZN (AOI211_X2)                     3.93      0.15      0.29       1.30 r
+  My_bus/U73/ZN (NAND2_X1)                      3.60      0.04      0.10       1.40 f
+  My_bus/U211/ZN (OAI21_X1)                     3.83      0.11      0.11       1.51 r
+  My_bus/U159/ZN (AOI22_X1)                     2.82      0.05      0.10       1.61 f
+  My_bus/U67/ZN (AND4_X2)                       1.75      0.02      0.15       1.76 f
+  My_bus/U148/ZN (NAND2_X1)                     3.10      0.04      0.08       1.83 r
+  My_bus/U168/ZN (NOR2_X1)                      1.77      0.01      0.04       1.88 f
+  My_bus/U173/ZN (AND4_X2)                      4.97      0.02      0.11       1.99 f
+  My_bus/U16/ZN (NAND3_X1)                      3.07      0.05      0.08       2.07 r
+  My_bus/U121/ZN (AND2_X2)                      4.41      0.03      0.12       2.19 r
+  My_bus/U124/ZN (NOR2_X1)                      4.29      0.02      0.05       2.24 f
+  My_bus/U248/ZN (INV_X1)                       1.95      0.02      0.06       2.29 r
+  My_bus/U448/ZN (NOR2_X1)                      1.81      0.02      0.03       2.33 f
+  My_bus/S2_ADDRBUS[30] (ubus_32_32_40001000_400017ff_20000000_200000ff_a0000000_a000000f_b0000000_b00000ff)
+                                                                    0.00       2.33 f
+  my_core_adapter/addr_in[30] (core_adapter)              0.02      0.01       2.34 f
+  data arrival time                                                            2.34
+
+  clock CLK (rise edge)                                             9.00       9.00
+  clock network delay (ideal)                                       0.00       9.00
+  my_core_adapter/clk (core_adapter)                                0.00       9.00 r
+  library setup time                                               -7.06       1.94
+  data required time                                                           1.94
+  ------------------------------------------------------------------------------------
+  data required time                                                           1.94
+  data arrival time                                                           -2.34
+  ------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                            -0.40
+
+
+1
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : ensc450
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 15:41:10 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db)
+    core_adapter (File: /local-scratch/localhome/escmc38/Desktop/ensc450/project/ensc450_system/BE_045/best_part2_results/core_adapter_slow.db)
+    SRAM (File: /CMC/setups/ensc450/Project/SRAM_Lib/SRAM.db)
+
+Information: The library cell 'SRAM' in the library 'SRAM' is not characterized for internal power. (PWR-227)
+Information: The library cell 'core_adapter' in the library 'core_adapter' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ensc450                5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 241.2874 uW   (95%)
+  Net Switching Power  =  13.0367 uW    (5%)
+                         ---------
+Total Dynamic Power    = 254.3241 uW  (100%)
+
+Cell Leakage Power     =  79.5677 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.6140            0.0000            0.6140  (   0.18%)
+clock_network      0.2792            1.8083        7.8626e+03            9.9501  (   2.98%)
+register         236.0651            0.2275        2.1341e+04          257.6343  (  77.16%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.9435           10.3870        5.0364e+04           65.6941  (  19.68%)
+--------------------------------------------------------------------------------------------------
+Total            241.2879 uW        13.0367 uW     7.9568e+04 nW       333.8925 uW
+1
+ 
+****************************************
+Report : clocks
+Design : ensc450
+Version: O-2018.06-SP5
+Date   : Sat Apr 17 15:41:10 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK              9.00   {0 4.5}             d         {clk}
+--------------------------------------------------------------------------------
+1

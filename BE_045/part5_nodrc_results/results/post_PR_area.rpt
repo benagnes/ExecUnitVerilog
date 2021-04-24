@@ -1,0 +1,17 @@
+Depth  Name                        #Inst  Area (um^2) 
+------------------------------------------------------
+0      ensc450                     3048   87469.4416  
+1      My_bus                      605    642.39      
+1      my_Counter                  1275   1960.42     
+1      My_DMA                      1133   2382.828    
+2      my_Counter/sub_83_G4_aco    125    108.794     
+2      My_DMA/add_116              35     135.394     
+2      my_Counter/sub_83_aco       125    108.794     
+2      my_Counter/sub_83_G3_aco    125    108.794     
+2      my_Counter/add_83_G3        32     81.928      
+2      My_DMA/sub_117_S2_aco       125    108.794     
+2      my_Counter/add_83_G2        32     81.928      
+2      my_Counter/add_83_G4        32     81.928      
+2      my_Counter/add_83           32     81.928      
+2      My_DMA/add_115              35     135.394     
+2      my_Counter/sub_83_G2_aco    125    108.794     

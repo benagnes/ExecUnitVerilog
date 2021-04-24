@@ -1,0 +1,812 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version O-2018.06-SP5 for linux64 - Jan 17, 2019 
+
+                    Copyright (c) 1988 - 2019 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# Adapted from fcampi
+# atino@sfu.ca Dec 2018
+# Simple combinational Synthesis example
+set TOP core_adapter
+core_adapter
+# -----------------------------
+# Specifying Technology Libraries Design constraints
+# -----------------------------
+# We use SLOW timing libraries for worst case timing estimation and fix timing (Setup) in worst possible case
+# Please note (1): TARGET_LIBRARY    libraries that can be used for synthesis, so the tool can CHOOSE TO USE THEM to implement your VHDL
+#                  LINK_LIBRARY      libraries than can be linked by the tool, that is used by the designer in his design, but not CHOSEN by the tool
+#                                    Example: Memory blocks, or a pre-layouted block or a standard cell explicitly defined by the designer in HDL 
+#                  SYNTHETIC_LIBRARY Synthetic or DesignWare libraries. These slibraries are technology-independent, microarchitecture-level 
+#                                    design libraries offered by synopsys and providing pre-packaged implementations for various IP blocks.
+#                                    They differ from target libraries in that they are technology independent and contain operators 
+#                                    (ex. Multiplier, adder etc) instead of cells
+# Please Note (2) : Sometimes, for simplicity, these variables are set in a configuration file (.synopsys_dc.setup that is read by dc_shell at init
+set search_path    "/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB"
+/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB
+# Target library is the library that is used by the synthesis tool 
+# in order to map the behavioral RTL logic that is being synthesized
+set target_library "NangateOpenCellLibrary_slow.db"
+NangateOpenCellLibrary_slow.db
+# The synthetic library variable specified pre-designed technology independent architectures pre-packaged by Synopsys
+set synthetic_library [list dw_foundation.sldb ]  
+dw_foundation.sldb
+#dw01.sldb dw02.sldb dw03.sldb #dw04.sldb dw05.sldb  dw07.sldb 
+# The link library must contain ALL CELLS used in the design.cOther than the two above, it shall include any IO cell, memory cell, 
+# or other cell/block that the user wishes to include in the design from other sources
+set link_library  [concat $target_library $synthetic_library]
+NangateOpenCellLibrary_slow.db dw_foundation.sldb
+# -----------------------------
+# Running Logic Synthesis
+# -----------------------------
+# Reading input VHDL File(s): This steps only parses VHDL determining syntax errors, but the Synthesis process is not performed yet
+analyze -format vhdl ../vhdl/fpupack.vhd
+Running PRESTO HDLC
+Compiling Package Declaration FPUPACK
+Compiling Package Body FPUPACK
+Presto compilation completed successfully.
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
+Loading db file '/CMC/tools/synopsys/syn_vO-2018.06-SP5/libraries/syn/dw_foundation.sldb'
+1
+analyze -format vhdl ../vhdl/fpu_add.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_ADD
+Compiling Architecture RTL of FPU_ADD
+Warning:  ../vhdl/fpu_add.vhd:58: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/fpu_sub.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_SUB
+Compiling Architecture RTL of FPU_SUB
+Warning:  ../vhdl/fpu_sub.vhd:62: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/fpu_mul.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_MUL
+Compiling Architecture RTL of FPU_MUL
+Warning:  ../vhdl/fpu_mul.vhd:59: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/fpu_round.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_ROUND
+Compiling Architecture RTL of FPU_ROUND
+Warning:  ../vhdl/fpu_round.vhd:56: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/fpu_exceptions.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_EXCEPTIONS
+Compiling Architecture RTL of FPU_EXCEPTIONS
+Warning:  ../vhdl/fpu_exceptions.vhd:56: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/comppack.vhd
+Running PRESTO HDLC
+Compiling Package Declaration COMPPACK
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/fpu_double.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration FPU_DOUBLE
+Compiling Architecture RTL of FPU_DOUBLE
+Warning:  ../vhdl/fpu_double.vhd:71: The architecture rtl has already been analyzed. It is being replaced. (VHD-4)
+Presto compilation completed successfully.
+1
+analyze -format vhdl ../vhdl/core_adapter.vhd
+Running PRESTO HDLC
+Compiling Entity Declaration CORE_ADAPTER
+Compiling Architecture BEH of CORE_ADAPTER
+
+-------------------
+    94:             else
+                    ^^^^
+[Failure] Syntax error : received 'else'
+          while expecting ';'
+ 
+*** Presto compilation was unsuccessful. ***
+0
+# Logic Synthesis
+elaborate $TOP 
+Loading db file '/CMC/tools/synopsys/syn_vO-2018.06-SP5/libraries/syn/gtech.db'
+Loading db file '/CMC/tools/synopsys/syn_vO-2018.06-SP5/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine core_adapter line 112 in file
+		'../vhdl/core_adapter.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   trigger_fpu_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       opa_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|       opb_reg       | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|     op_misc_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|    out_flags_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    data_out_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'core_adapter'.
+Information: Building the design 'fpu_double'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_double line 165 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  count_cycles_reg   | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+| mantissa_round_reg  | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+| exponent_round_reg  | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|   sign_round_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 201 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   exp_addsub_reg    | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|   add_enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   sub_enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   mul_enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   addsub_out_reg    | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|   addsub_sign_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 240 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   count_ready_reg   | Flip-flop |   7   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 255 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  enable_reg_1_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   enable_reg_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 280 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    op_enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     opa_reg_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|     opb_reg_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|   fpu_op_reg_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|    rmode_reg_reg    | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 300 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ready_sig_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     ready_2_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine fpu_double line 319 in file
+		'../vhdl/fpu_double.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_fp_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|    underflow_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    overflow_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inexact_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    exception_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     invalid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_add'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_add line 100 in file
+		'../vhdl/fpu_add.vhd'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+|       exponent_2_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|          sign_reg           | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       exponent_a_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|       exponent_b_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mantissa_a_reg        | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mantissa_b_reg        | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|     exponent_small_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     exponent_large_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mantissa_small_reg      | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mantissa_large_reg      | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|     small_is_denorm_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     large_is_denorm_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| large_norm_small_denorm_reg | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_diff_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|        large_add_reg        | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|        small_add_reg        | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|       small_shift_reg       | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|      small_shift_3_reg      | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|           sum_reg           | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|          sum_2_reg          | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|          sum_3_reg          | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|        exponent_reg         | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     denorm_to_norm_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+=======================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_sub'. (HDL-193)
+
+Statistics for case statements in always block at line 106 in file
+	'../vhdl/fpu_sub.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            82            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_sub line 106 in file
+		'../vhdl/fpu_sub.vhd'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+|         diff_2_reg          | Flip-flop |  56   |  Y  | N  | N  | N  | N  | N  | N  |
+|       exponent_a_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|       exponent_b_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mantissa_a_reg        | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mantissa_b_reg        | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|      expa_gt_expb_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      expa_et_expb_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     mana_gtet_manb_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        a_gtet_b_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     exponent_small_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     exponent_large_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mantissa_small_reg      | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|     mantissa_large_reg      | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|          sign_reg           | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     small_is_denorm_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     large_is_denorm_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| large_norm_small_denorm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    small_is_nonzero_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      exponent_diff_reg      | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|         minuend_reg         | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|       subtrahend_reg        | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|      subtra_shift_reg       | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|     subtra_shift_3_reg      | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|       diff_shift_reg        | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|      diff_shift_2_reg       | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|          diff_reg           | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|  diffshift_gt_exponent_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     diffshift_et_55_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         diff_1_reg          | Flip-flop |  55   |  Y  | N  | N  | N  | N  | N  | N  |
+|        exponent_reg         | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|       exponent_2_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+=======================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_mul'. (HDL-193)
+
+Statistics for case statements in always block at line 115 in file
+	'../vhdl/fpu_mul.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            82            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine fpu_mul line 115 in file
+		'../vhdl/fpu_mul.vhd'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+|    product_shift_2_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sign_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mantissa_a_reg       | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|      mantissa_b_reg       | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_a_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_b_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|       a_is_norm_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       b_is_norm_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       a_is_zero_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       b_is_zero_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        in_zero_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    exponent_terms_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+| exponent_gt_expoffset_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    exponent_under_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_1_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_2_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+| exponent_gt_prodshift_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      exponent_3_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|      exponent_4_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|   exponent_et_zero_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         mul_a_reg         | Flip-flop |  53   |  Y  | N  | N  | N  | N  | N  | N  |
+|         mul_b_reg         | Flip-flop |  53   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_a_reg       | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_b_reg       | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_c_reg       | Flip-flop |  41   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_d_reg       | Flip-flop |  26   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_e_reg       | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_f_reg       | Flip-flop |  34   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_g_reg       | Flip-flop |  36   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_h_reg       | Flip-flop |  29   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_i_reg       | Flip-flop |  29   |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_j_reg       | Flip-flop |  31   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_0_reg         | Flip-flop |  42   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_1_reg         | Flip-flop |  36   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_2_reg         | Flip-flop |  42   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_3_reg         | Flip-flop |  36   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_4_reg         | Flip-flop |  37   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_5_reg         | Flip-flop |  28   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_6_reg         | Flip-flop |  30   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_7_reg         | Flip-flop |  37   |  Y  | N  | N  | N  | N  | N  | N  |
+|         sum_8_reg         | Flip-flop |  31   |  Y  | N  | N  | N  | N  | N  | N  |
+|        product_reg        | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_1_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_2_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_3_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_4_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_5_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|       product_6_reg       | Flip-flop |  106  |  Y  | N  | N  | N  | N  | N  | N  |
+|      product_lsb_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      exponent_5_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|     product_shift_reg     | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_round'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_round line 96 in file
+		'../vhdl/fpu_round.vhd'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|    round_out_reg     | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|    sum_round_reg     | Flip-flop |  54   |  Y  | N  | N  | N  | N  | N  | N  |
+|   sum_round_2_reg    | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|  exponent_round_reg  | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|    sum_final_reg     | Flip-flop |  52   |  Y  | N  | N  | N  | N  | N  | N  |
+|  exponent_final_reg  | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+| exponent_final_2_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+Presto compilation completed successfully.
+Information: Building the design 'fpu_exceptions'. (HDL-193)
+
+Inferred memory devices in process
+	in routine fpu_exceptions line 126 in file
+		'../vhdl/fpu_exceptions.vhd'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+|         out_2_reg          | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|       in_et_zero_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opa_et_zero_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opb_et_zero_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|          add_reg           | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        subtract_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        multiply_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         divide_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opa_QNaN_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opb_QNaN_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opa_SNaN_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opb_SNaN_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opa_pos_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opb_pos_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opa_neg_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      opb_neg_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opa_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        opb_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       NaN_input_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       SNaN_input_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         a_NaN_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        div_by_0_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       div_0_by_0_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     div_inf_by_inf_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       div_by_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      mul_0_by_inf_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        mul_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        div_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        add_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        sub_inf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   addsub_inf_invalid_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       addsub_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    out_inf_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      out_pos_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      out_neg_inf_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     round_to_zero_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    round_to_pos_inf_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    round_to_neg_inf_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| inf_round_down_trigger_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         mul_uf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|         div_uf_reg         | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   underflow_trigger_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    invalid_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    overflow_trigger_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    inexact_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     except_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     enable_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    NaN_out_trigger_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      SNaN_trigger_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      NaN_output_0_reg      | Flip-flop |  63   |  Y  | N  | N  | N  | N  | N  | N  |
+|       NaN_output_reg       | Flip-flop |  63   |  Y  | N  | N  | N  | N  | N  | N  |
+|     inf_round_down_reg     | Flip-flop |  63   |  Y  | N  | N  | N  | N  | N  | N  |
+|        out_inf_reg         | Flip-flop |  63   |  Y  | N  | N  | N  | N  | N  | N  |
+|         out_0_reg          | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|         out_1_reg          | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine fpu_exceptions line 490 in file
+		'../vhdl/fpu_exceptions.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_fp_reg      | Flip-flop |  64   |  Y  | N  | N  | N  | N  | N  | N  |
+|    ex_enable_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    underflow_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    overflow_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     inexact_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    exception_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     invalid_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1
+# The link command will resolve dependencies in the HDL hierarchy, so that if a sub-module in the hierarchy is missing or badly defined, 
+# the tool will exit with an error.
+# The uniquify command will force the tool to consider "independently" different instances of the same HDL entity. 
+# Suppose that we have 120 FFs in our design: some of them will have high fanout, some low, some tight timing constraints, some loose. 
+# Each must be synthesized independently, not each FF will be mapped on the same cell!
+current_design $TOP
+Current design is 'core_adapter'.
+{core_adapter}
+link
+
+  Linking design 'core_adapter'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  NangateOpenCellLibrary (library) /CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db
+  dw_foundation.sldb (library) /CMC/tools/synopsys/syn_vO-2018.06-SP5/libraries/syn/dw_foundation.sldb
+
+1
+uniquify
+1
+# -----------------------------
+# Setting Design constraints
+# -----------------------------
+# After Logic synthesis has been performed, the logic functionality of the HDL is known. With the following step, 
+# the functionality is mapped over the available standard cells, in order to produce a netlist that will represent 
+# the technology implementation of the HDL functionality
+# Since as we know the synthesis process is driven by our CONSTRAINTS, before we perform technology mapping we need to specify the constraints 
+# to our design. In particular, we must impose TIMINGS.
+# If we specify nothing, the tool will produce the smallest AREA not considering timing
+## Boundary Conditions
+#set_input_transition -max       1         [all_inputs]
+#set_load                        5         [all_outputs]
+## Timing Constraints
+# Establishing clock period:  Since clock is ideal, we don't want the tool to optimize the clk net so we set it as "dont touch"
+create_clock -name CLK -period 20 -waveform {0 10} {clk}
+1
+set_dont_touch_network CLK 
+1
+#set high_fanout_net_threshold 0
+#set_propagated_clock CLK
+# Delays imposed by the communication to/from other blocks in the system. 
+# This number should be given to us by the designers of other blocks or by who is designing the TOP IC.
+set_input_delay  0.8 -max -clock CLK  [all_inputs]
+1
+set_output_delay 0.8 -max -clock CLK  [all_outputs]
+1
+# There is no reason to make the reset line so fast to complete in one clock
+#set_max_delay 200 -from rst
+# -----------------------------
+# Running Technology Mapping
+# -----------------------------
+#set_dont_touch *
+#set TOP fpu_add
+#current_design $TOP
+#elaborate $TOP 
+#link
+#uniquify
+#compile -map_effort high -incremental_mapping
+#write -format verilog -hier -o   ./results/$TOP.ref.v
+#set TOP fpu_sub
+#current_design $TOP
+#elaborate $TOP 
+#link
+#uniquify
+#compile -map_effort high -incremental_mapping
+#write -format verilog -hier -o   ./results/$TOP.ref.v
+#set TOP fpu_mul
+#current_design $TOP
+#elaborate $TOP 
+#link
+#uniquify
+#compile -map_effort high -incremental_mapping
+#write -format verilog -hier -o   ./results/$TOP.ref.v
+#set TOP fpu_round
+#current_design $TOP
+#elaborate $TOP 
+#link
+#uniquify
+#set_dont_touch [get_nets *]
+#compile -map_effort high -incremental_mapping
+#write -format verilog -hier -o   ./results/$TOP.ref.v
+#set TOP fpu_exceptions
+#current_design $TOP
+#elaborate $TOP 
+#link
+#uniquify
+#compile -map_effort high -incremental_mapping
+#write -format verilog -hier -o   ./results/$TOP.ref.v
+set TOP core_adapter
+core_adapter
+compile -map_effort high -incremental_mapping
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | O-2018.06-DWBB_201806.5 |     *     |
+| Licensed DW Building Blocks        | O-2018.06-DWBB_201806.5 |     *     |
+============================================================================
+
+
+Information: There are 25 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+  Processing 'fpu_exceptions'
+Information: The register 'inf_round_down_reg[52]' is a constant and will be removed. (OPT-1206)
+  Processing 'fpu_round'
+  Processing 'fpu_mul'
+Information: The register 'exponent_a_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'exponent_b_reg[11]' is a constant and will be removed. (OPT-1206)
+  Processing 'fpu_sub'
+Information: The register 'diff_2_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'minuend_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'minuend_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'subtrahend_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'subtrahend_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'fpu_add'
+Information: The register 'large_norm_small_denorm_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[4]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[3]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_norm_small_denorm_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_add_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_add_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'large_add_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'small_add_reg[55]' is a constant and will be removed. (OPT-1206)
+Information: The register 'small_add_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'small_add_reg[0]' is a constant and will be removed. (OPT-1206)
+  Processing 'fpu_double'
+Information: The register 'count_cycles_reg[6]' is a constant and will be removed. (OPT-1206)
+Information: The register 'count_cycles_reg[5]' is a constant and will be removed. (OPT-1206)
+Information: The register 'count_cycles_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'exp_addsub_reg[11]' is a constant and will be removed. (OPT-1206)
+  Processing 'core_adapter'
+Information: The register 'out_flags_reg[31]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[30]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[29]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[28]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[27]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[26]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[25]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[24]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[23]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[22]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[21]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[18]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[17]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[16]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[15]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[14]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[13]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[12]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[11]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[10]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[9]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[8]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[7]' is a constant and will be removed. (OPT-1206)
+Information: The register 'out_flags_reg[6]' is a constant and will be removed. (OPT-1206)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+  Processing 'fpu_double_DW01_inc_0'
+  Mapping 'fpu_double_DW_cmp_0'
+  Mapping 'fpu_exceptions_DW_cmp_0'
+  Processing 'fpu_round_DW01_inc_0'
+  Processing 'fpu_round_DW01_add_0'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'fpu_mul'. (DDB-72)
+  Mapping 'DW_leftsh'
+  Mapping 'DW_rightsh'
+  Processing 'fpu_mul_DW01_add_0'
+  Processing 'fpu_mul_DW01_add_1'
+  Processing 'fpu_mul_DW01_add_2'
+  Processing 'fpu_mul_DW01_add_3'
+  Processing 'fpu_mul_DW01_add_4'
+  Processing 'fpu_mul_DW01_add_5'
+  Processing 'fpu_mul_DW01_add_6'
+  Processing 'fpu_mul_DW01_add_7'
+  Processing 'fpu_mul_DW01_add_8'
+  Processing 'fpu_mul_DW01_sub_0'
+  Mapping 'fpu_mul_DW_cmp_0'
+  Processing 'fpu_mul_DW01_sub_1'
+  Processing 'fpu_mul_DW01_sub_2'
+  Mapping 'fpu_mul_DW_cmp_1'
+  Processing 'fpu_sub_DW01_sub_0'
+  Mapping 'DW_leftsh'
+Information: Added key list 'DesignWare' to design 'fpu_sub'. (DDB-72)
+  Mapping 'DW_leftsh'
+  Mapping 'fpu_sub_DW_cmp_0'
+  Processing 'fpu_sub_DW01_sub_1'
+  Mapping 'DW_rightsh'
+  Processing 'fpu_sub_DW01_sub_2'
+  Mapping 'fpu_sub_DW_cmp_1'
+  Mapping 'fpu_sub_DW_cmp_2'
+  Mapping 'fpu_sub_DW_cmp_3'
+  Processing 'fpu_sub_DW01_cmp6_0'
+  Processing 'fpu_add_DW01_inc_0'
+  Processing 'fpu_add_DW01_inc_1'
+  Processing 'fpu_add_DW01_add_0'
+  Mapping 'DW_rightsh'
+Information: Added key list 'DesignWare' to design 'fpu_add'. (DDB-72)
+  Mapping 'fpu_add_DW_cmp_0'
+  Mapping 'fpu_add_DW_cmp_1'
+  Mapping 'fpu_add_DW_cmp_2'
+  Mapping 'fpu_mul_DW_mult_uns_0'
+  Mapping 'fpu_mul_DW_mult_uns_1'
+  Mapping 'fpu_mul_DW_mult_uns_2'
+  Mapping 'fpu_mul_DW_mult_uns_3'
+  Mapping 'fpu_mul_DW_mult_uns_4'
+  Mapping 'fpu_mul_DW_mult_uns_5'
+  Mapping 'fpu_mul_DW_mult_uns_6'
+  Mapping 'fpu_mul_DW_mult_uns_7'
+  Mapping 'fpu_mul_DW_mult_uns_8'
+  Mapping 'fpu_mul_DW_mult_uns_9'
+  Processing 'fpu_mul_DW01_add_9'
+  Processing 'fpu_mul_DW01_add_10'
+  Processing 'fpu_add_DW01_sub_0'
+  Processing 'fpu_add_DW01_add_1'
+
+  Beginning Mapping Optimizations  (High effort)  (Incremental)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'fpu_double'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'fpu_exceptions'. (DDB-72)
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Selecting implementations
+  Selecting implementations
+  Selecting implementations
+  Mapping 'fpu_sub_DW_cmp_5'
+  Mapping 'fpu_sub_DW_cmp_6'
+  Selecting implementations
+  Mapping 'fpu_mul_DW_mult_uns_20'
+  Mapping 'fpu_mul_DW_mult_uns_21'
+  Mapping 'fpu_mul_DW_mult_uns_22'
+  Mapping 'fpu_mul_DW_mult_uns_23'
+  Mapping 'fpu_mul_DW_mult_uns_24'
+  Mapping 'fpu_mul_DW_mult_uns_25'
+  Mapping 'fpu_mul_DW_mult_uns_26'
+  Mapping 'fpu_mul_DW_mult_uns_27'
+  Mapping 'fpu_mul_DW_mult_uns_28'
+  Mapping 'fpu_mul_DW_mult_uns_29'
+  Mapping 'fpu_mul_DW_mult_uns_30'
+  Mapping 'fpu_mul_DW_mult_uns_31'
+  Mapping 'fpu_mul_DW_mult_uns_32'
+  Mapping 'fpu_mul_DW_mult_uns_33'
+  Mapping 'fpu_mul_DW_mult_uns_34'
+  Mapping 'fpu_mul_DW_mult_uns_35'
+  Mapping 'fpu_mul_DW_mult_uns_36'
+  Mapping 'fpu_mul_DW_mult_uns_37'
+  Mapping 'fpu_mul_DW_mult_uns_38'
+  Mapping 'fpu_mul_DW_mult_uns_39'
+  Selecting implementations
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25   49126.5    663.57 1312929.2   62657.0                          
+    0:00:27   49704.0      0.00       0.0   17847.2                          
+    0:00:27   49633.5      0.00       0.0   17847.2                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:27   49633.5      0.00       0.0   17847.2                          
+    0:00:28   49726.6      0.00       0.0    9544.2 my_fpu_double/i_fpu_round/n7
+    0:00:28   49780.3      0.00       0.0    6130.1 my_fpu_double/i_fpu_mul/mul_b[36]
+    0:00:28   49832.4      0.00       0.0    3784.8 my_fpu_double/i_fpu_exceptions/n537
+    0:00:29   49853.7      0.00       0.0    2333.1 my_fpu_double/i_fpu_sub/net66978
+    0:00:29   49871.5      0.00       0.0    1893.8 my_fpu_double/i_fpu_mul/mult_215/net59135
+    0:00:29   49954.0      0.00       0.0    1560.2 my_fpu_double/i_fpu_mul/mult_214/net60068
+    0:00:29   50000.6      0.00       0.0    1243.0 my_fpu_double/i_fpu_mul/mult_214/net60129
+    0:00:30   50006.9      0.00       0.0     915.8 my_fpu_double/i_fpu_mul/mult_213/net61019
+    0:00:30   50039.9      0.00       0.0     649.0 my_fpu_double/i_fpu_mul/mult_222/net55634
+    0:00:30   50030.9      0.00       0.0     499.9 my_fpu_double/i_fpu_mul/mult_217/net58326
+    0:00:30   50142.3      0.00       0.0     405.1 my_fpu_double/i_fpu_mul/mult_218/net57838
+    0:00:31   50058.3      0.00       0.0     322.4 my_fpu_double/i_fpu_mul/mult_220/net56699
+    0:00:31   50058.0      0.00       0.0       0.0                          
+Loading db file '/CMC/setups/ensc450/SOCLAB/LIBRARIES/NangateOpenCellLibrary_PDKv1_3_v2010_12/Front_End/DB/NangateOpenCellLibrary_slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'core_adapter' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'my_fpu_double/i_fpu_exceptions/clk': 4455 load(s), 1 driver(s)
+1
+# -----------------------------
+# Producing Results
+# -----------------------------
+# Writing out reports: Used cells (Area), Timing, Power
+report_reference -hierarchy  >  ./results/$TOP.rpt
+report_timing    -transition_time -capacitance >> ./results/$TOP.rpt
+report_power     >> ./results/$TOP.rpt
+report_clock     >> ./results/$TOP.rpt
+# Writing out final netlist (Verilog/ddc) and relative constraints
+write -f ddc -hierarchy  -output ./results/$TOP.ddc
+Writing ddc file './results/core_adapter.ddc'.
+1
+write_sdc -nosplit               ./results/$TOP.sdc
+1
+write -format verilog -hier -o   ./results/$TOP.ref.v
+Writing verilog file '/local-scratch/localhome/escmc38/Desktop/ensc450/project/ensc450_system/syn_045/results/core_adapter.ref.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 2 nets to module fpu_round using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Warning: Verilog writer has added 2 nets to module fpu_double using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+exit
+
+Thank you...
