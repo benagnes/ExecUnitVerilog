@@ -10,12 +10,12 @@ module tb_mul32 #(parameter N=32);
     wire ready;
 	wire [N-1:0] product_upper;
 	wire [N-1:0] product_lower;
-    wire cout;
+    //wire cout;
 
 	localparam period = 10; // default units is ns
 
 	multiply_32 UUT (.clk(clk), .reset(reset), .enable(enable), .multiplier(multiplier), .multiplicand(multiplicand), 
-                        .ready(ready), .product_upper(product_upper), .product_lower(product_lower), .cout(cout));
+                        .ready(ready), .product_upper(product_upper), .product_lower(product_lower));//, .cout(cout));
 
     // setup clock
     always #(period/2) clk = ~clk;
@@ -25,16 +25,15 @@ module tb_mul32 #(parameter N=32);
             clk <= 0;
             reset <= 1;
             enable <= 0;
-            multiplier <= 32'b00000000000000000000000000000010;
-            multiplicand <= 32'b00000000000000000000000000000010;
+            multiplier <= 32'b00000000000000000000000000000011;
+            multiplicand <= 32'b00000000000000000000000000000011;
             #period; // wait for period 
 
             reset <= 0;
             enable <= 1;
-            #period; // wait for period
-            
-            enable <= 0;
-            #(period*33); // wait for period 
+            #(period*35); // wait for period 
 
+            enable <= 0;
+            #period;
         end
 endmodule

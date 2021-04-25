@@ -29,4 +29,6 @@ sim:/tb_mul32/UUT/ovfl
 add wave -radix hexadecimal \
 sim:/tb_mul32/UUT/add_sub0/opA \
 sim:/tb_mul32/UUT/add_sub0/opB \
-sim:/tb_mul32/UUT/add_sub0/sum
+sim:/tb_mul32/UUT/add_sub0/sum \
+sim:/tb_mul32/UUT/add_sub0/cout
+

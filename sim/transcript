@@ -17,2043 +17,993 @@ do scripts/tb_mul32.do
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:39:31 on Apr 24,2021
+# Start time: 19:48:36 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 16:39:31 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 19:48:36 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:39:32 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(38): near "else": syntax error, unexpected else.
-# ** Error (suppressible): ../verilog/multiply_32.v(41): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(42): near "genvar": syntax error, unexpected genvar.
-# ** Error: ../verilog/multiply_32.v(44): (vlog-2730) Undefined variable: 'i'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(44): near ")": syntax error, unexpected ')', expecting ';'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(50): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(54): near "<=": syntax error, unexpected <=.
-# ** Error: ../verilog/multiply_32.v(54): (vlog-13205) Syntax error found in the scope following 'multiplicand_reg'. Is there a missing '::'?
-# End time: 16:39:32 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:40:04 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:40:04 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:40:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(39): near "else": syntax error, unexpected else.
-# ** Error: ../verilog/multiply_32.v(41): (vlog-13205) Syntax error found in the scope following 'product_reg'. Is there a missing '::'?
-# End time: 16:40:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:42:18 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:42:18 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:42:19 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(38): near "else": syntax error, unexpected else.
-# ** Error (suppressible): ../verilog/multiply_32.v(41): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(42): near "genvar": syntax error, unexpected genvar.
-# ** Error: ../verilog/multiply_32.v(44): (vlog-2730) Undefined variable: 'i'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(44): near ")": syntax error, unexpected ')', expecting ';'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(50): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(54): near "<=": syntax error, unexpected <=.
-# ** Error: ../verilog/multiply_32.v(54): (vlog-13205) Syntax error found in the scope following 'multiplicand_reg'. Is there a missing '::'?
-# End time: 16:42:19 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:44:10 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:44:10 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:44:11 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(44): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(45): near "genvar": syntax error, unexpected genvar.
-# ** Error: ../verilog/multiply_32.v(47): (vlog-2730) Undefined variable: 'i'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(47): near ")": syntax error, unexpected ')', expecting ';'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(53): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(57): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(58): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: ../verilog/multiply_32.v(62): (vlog-13205) Syntax error found in the scope following 'product_lower'. Is there a missing '::'?
-# End time: 16:44:11 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:51:09 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:51:09 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:51:10 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(45): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(47): near "generate": syntax error, unexpected generate.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(48): near ")": syntax error, unexpected ')', expecting ';'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(54): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(58): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(59): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: ../verilog/multiply_32.v(63): (vlog-13205) Syntax error found in the scope following 'product_lower'. Is there a missing '::'?
-# End time: 16:51:10 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:51:56 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:51:56 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:51:56 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(45): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(52): Checker 'full_adder' not found.  Instantiation 'my_fa' must be of a visible checker.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(54): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(58): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(59): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(67): near "else": syntax error, unexpected else.
-# End time: 16:51:56 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:55:25 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 16:55:25 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 16:55:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(46): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(53): Checker 'add_sub' not found.  Instantiation 'add_sub0' must be of a visible checker.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(56): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(60): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(61): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(69): near "else": syntax error, unexpected else.
-# End time: 16:55:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:04:47 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:04:47 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:04:47 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error (suppressible): ../verilog/add_sub.v(12): (vlog-13299) Undefined variable: 'enable'.
-# ** Error: (vlog-13060) ../verilog/add_sub.v(14): near "generate": Cannot nest generate regions.  Try removing inner generate/endgenerate keyword pair.
-# ** Error: ../verilog/add_sub.v(15): (vlog-13205) Syntax error found in the scope following 'i'. Is there a missing '::'?
-# End time: 17:04:47 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:06:58 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:06:58 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:06:59 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error (suppressible): ../verilog/add_sub.v(14): (vlog-13299) Undefined variable: 'enable'.
-# ** Error: ../verilog/add_sub.v(1): (vlog-2730) Undefined variable: 'enable'.
-# ** Error: ../verilog/add_sub.v(1): (vlog-13294) Identifier must be declared with a port mode: enable.
-# End time: 17:06:59 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:07:20 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:07:20 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:07:21 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(14): The generate if condition must be a constant expression.
-# End time: 17:07:21 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:07:50 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:07:50 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:07:51 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: (vlog-13069) ../verilog/add_sub.v(30): near "end": syntax error, unexpected end.
-# End time: 17:07:51 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:08:01 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:08:01 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:08:02 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(13): The generate if condition must be a constant expression.
-# End time: 17:08:02 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:08:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:08:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:08:27 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(13): The generate if condition must be a constant expression.
-# End time: 17:08:27 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:09:47 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:09:47 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:09:48 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(14): The generate if condition must be a constant expression.
-# End time: 17:09:48 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:11:40 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:11:40 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:11:41 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(22): Checker 'full_adder' not found.  Instantiation 'f' must be of a visible checker.
-# ** Error: ../verilog/add_sub.v(22): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
-# ** Error: ../verilog/add_sub.v(26): Checker 'full_adder' not found.  Instantiation 'f' must be of a visible checker.
-# ** Error: ../verilog/add_sub.v(26): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
-# ** Error: ../verilog/add_sub.v(28): LHS in procedural continuous assignment may not be a net: ovfl.
-# ** Error: ../verilog/add_sub.v(29): LHS in procedural continuous assignment may not be a net: cout.
-# ** Error: (vlog-13069) ../verilog/add_sub.v(33): near "endmodule": syntax error, unexpected endmodule.
-# End time: 17:11:41 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:14:22 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:14:22 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:14:23 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(14): The generate if condition must be a constant expression.
-# End time: 17:14:23 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:18:31 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:18:32 on Apr 24,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:18:32 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: ../verilog/add_sub.v(17): The generate if condition must be a constant expression.
-# ** Error: ../verilog/add_sub.v(20): The generate if condition must be a constant expression.
-# End time: 17:18:32 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:22:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:22:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:22:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# ** Error: (vlog-13069) ../verilog/add_sub.v(25): near "endgenerate": syntax error, unexpected endgenerate.
-# End time: 17:22:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 8
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/add_sub.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:23:29 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:30 on Apr 24,2021
+# Start time: 19:48:37 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 17:23:30 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 19:48:37 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:30 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(33): (vlog-2730) Undefined variable: 'enable_adder'.
-# ** Error (suppressible): ../verilog/multiply_32.v(47): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(57): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(61): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(62): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(70): near "else": syntax error, unexpected else.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: multiplicand.
-# End time: 17:23:30 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 8, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:48 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:23:48 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:23:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:23:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(46): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13009) ../verilog/multiply_32.v(56): near ";": Unexpected '[' following the name of a task.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(60): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(61): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(69): near "else": syntax error, unexpected else.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: multiplicand.
-# End time: 17:23:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:24:13 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:24:13 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:24:14 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:24:14 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:24:15 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(46): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(60): near "lshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(61): near "rshift": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(69): near "else": syntax error, unexpected else.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: multiplicand.
-# End time: 17:24:15 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:26:14 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:26:14 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:26:15 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:26:15 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:26:15 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error (suppressible): ../verilog/multiply_32.v(46): (vlog-13299) Undefined variable: 'multiplicand'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(70): near "else": syntax error, unexpected else.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'multiplicand'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: multiplicand.
-# End time: 17:26:15 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:27:21 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:27:21 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:27:22 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:27:22 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:27:22 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(71): near "else": syntax error, unexpected else.
-# End time: 17:27:22 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:09 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:29:09 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:10 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:29:10 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:10 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(72): near "end": syntax error, unexpected end.
-# End time: 17:29:10 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:35 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:29:35 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:36 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:29:36 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:29:36 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(34): (vlog-2110) Illegal reference to net "adder_out".
-# ** Error: ../verilog/multiply_32.v(35): (vlog-2110) Illegal reference to net "adder_cout".
-# ** Error: ../verilog/multiply_32.v(38): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(39): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(40): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(41): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(45): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(51): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(51): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(51): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(51): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(68): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(69): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(70): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(71): (vlog-2110) Illegal reference to net "ready".
-# End time: 17:29:36 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 15, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:30:18 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:30:18 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:30:19 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:30:19 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:30:19 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(37): (vlog-2110) Illegal reference to net "adder_out".
-# ** Error: ../verilog/multiply_32.v(38): (vlog-2110) Illegal reference to net "adder_cout".
-# ** Error: ../verilog/multiply_32.v(41): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(42): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(43): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(44): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(48): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(71): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(72): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(73): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(74): (vlog-2110) Illegal reference to net "ready".
-# End time: 17:30:19 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 15, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:32:00 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:32:00 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:32:01 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:32:01 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:32:01 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(48): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(71): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(72): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(73): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(74): (vlog-2110) Illegal reference to net "ready".
-# End time: 17:32:01 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:32:59 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:32:59 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:33:00 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:33:00 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:33:00 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(8): near "product_upper": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(9): near "product_lower": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(10): near "cout": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(11): near "ready": syntax error, unexpected IDENTIFIER, expecting ';'.
-# ** Error (suppressible): ../verilog/multiply_32.v(41): (vlog-13299) Undefined variable: 'ready'.
-# ** Error (suppressible): ../verilog/multiply_32.v(42): (vlog-13299) Undefined variable: 'product_upper'.
-# ** Error (suppressible): ../verilog/multiply_32.v(43): (vlog-13299) Undefined variable: 'product_lower'.
-# ** Error (suppressible): ../verilog/multiply_32.v(44): (vlog-13299) Undefined variable: 'cout'.
-# ** Error (suppressible): ../verilog/multiply_32.v(48): (vlog-13299) Undefined variable: 'ready'.
-# ** Error (suppressible): ../verilog/multiply_32.v(71): (vlog-13299) Undefined variable: 'product_upper'.
-# ** Error (suppressible): ../verilog/multiply_32.v(72): (vlog-13299) Undefined variable: 'product_lower'.
-# ** Error (suppressible): ../verilog/multiply_32.v(73): (vlog-13299) Undefined variable: 'cout'.
-# ** Error (suppressible): ../verilog/multiply_32.v(74): (vlog-13299) Undefined variable: 'ready'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'ready'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: ready.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'product_upper'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: product_upper.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'product_lower'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: product_lower.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-2730) Undefined variable: 'cout'.
-# ** Error: ../verilog/multiply_32.v(1): (vlog-13294) Identifier must be declared with a port mode: cout.
-# End time: 17:33:00 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 21, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:04 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:34:04 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:34:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(48): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(54): Invalid context for genvar i. A genvar can be used only inside of the generate loop that it indexes.
-# ** Error: ../verilog/multiply_32.v(71): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(72): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(73): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(74): (vlog-2110) Illegal reference to net "ready".
-# End time: 17:34:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 9, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:34:29 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:30 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:34:30 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:34:30 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(52): near "genvar": syntax error, unexpected genvar.
-# ** Error: ../verilog/multiply_32.v(54): (vlog-2730) Undefined variable: 'i'.
-# End time: 17:34:30 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:42:32 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:42:32 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:42:32 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:42:32 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:42:33 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(50): (vlog-2110) Illegal reference to net "ready".
-# ** Error: ../verilog/multiply_32.v(70): (vlog-2110) Illegal reference to net "product_upper".
-# ** Error: ../verilog/multiply_32.v(71): (vlog-2110) Illegal reference to net "product_lower".
-# ** Error: ../verilog/multiply_32.v(72): (vlog-2110) Illegal reference to net "cout".
-# ** Error: ../verilog/multiply_32.v(73): (vlog-2110) Illegal reference to net "ready".
-# End time: 17:42:33 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:45:17 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:45:17 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:45:18 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:45:18 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:45:18 on Apr 24,2021
+# Start time: 19:48:38 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 17:45:18 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 19:48:38 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:45:19 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# ** Error: ../verilog/tb_mul32.v(39): (vlog-2730) Undefined variable: 'mutliplicand'.
-# ** Warning: ../verilog/tb_mul32.v(44): (vlog-2643) Unterminated string literal continues onto next line.
-# ** Error: (vlog-13069) ../verilog/tb_mul32.v(45): near ";": syntax error, unexpected STRING_LITERAL, expecting ';'.
-# End time: 17:45:19 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 1
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 10
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/tb_mul32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:46:48 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:46:48 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:46:48 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:46:48 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:46:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 17:46:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:46:49 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# ** Error: ../verilog/tb_mul32.v(39): (vlog-2730) Undefined variable: 'mutliplicand'.
-# ** Warning: ../verilog/tb_mul32.v(44): (vlog-2643) Unterminated string literal continues onto next line.
-# ** Error: (vlog-13069) ../verilog/tb_mul32.v(45): near ";": syntax error, unexpected STRING_LITERAL, expecting ';'.
-# End time: 17:46:49 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 1
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 10
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/tb_mul32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:28 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:47:28 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:47:29 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 17:47:29 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# ** Warning: ../verilog/tb_mul32.v(44): (vlog-2643) Unterminated string literal continues onto next line.
-# ** Error: (vlog-13069) ../verilog/tb_mul32.v(45): near ";": syntax error, unexpected STRING_LITERAL, expecting ';'.
-# End time: 17:47:30 on Apr 24,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 1
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 10
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/tb_mul32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:41 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:47:41 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:42 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:47:42 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:42 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 17:47:43 on Apr 24,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:47:43 on Apr 24,2021
+# Start time: 19:48:38 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 17:47:43 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 19:48:38 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 17:47:43 on Apr 24,2021
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 19:48:39 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
 # ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'sum'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 28
 # ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'cout'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ovfl'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 28
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
 # MACRO ./scripts/tb_mul32.do PAUSED at line 14
 do scripts/tb_mul32.do
-# End time: 17:48:32 on Apr 24,2021, Elapsed time: 0:00:49
-# Errors: 3, Warnings: 0
+# End time: 20:26:23 on Apr 24,2021, Elapsed time: 0:37:44
+# Errors: 2, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:48:32 on Apr 24,2021
+# Start time: 20:26:23 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 17:48:32 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 20:26:24 on Apr 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:48:33 on Apr 24,2021
+# Start time: 20:26:24 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 17:48:33 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 20:26:24 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:48:33 on Apr 24,2021
+# Start time: 20:26:25 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 17:48:33 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 20:26:25 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:48:34 on Apr 24,2021
+# Start time: 20:26:25 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 17:48:34 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 20:26:25 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 17:48:34 on Apr 24,2021
+# Start time: 20:26:25 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 20:28:31 on Apr 24,2021, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 20:28:31 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 20:28:32 on Apr 24,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 20:28:32 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 20:28:32 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 20:28:33 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 20:28:33 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 20:28:33 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 20:28:33 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 20:28:34 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 21:03:41 on Apr 24,2021, Elapsed time: 0:35:07
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:03:41 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:03:41 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:03:42 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:03:42 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:03:42 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 21:03:42 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:03:43 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 21:03:43 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 21:03:43 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 21:17:34 on Apr 24,2021, Elapsed time: 0:13:51
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:17:34 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:17:34 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:17:35 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:17:35 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:17:36 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 21:17:36 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:17:36 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 21:17:36 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 21:17:37 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 21:44:40 on Apr 24,2021, Elapsed time: 0:27:03
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:40 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:44:40 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:42 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:44:42 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:42 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: (vlog-13069) ../verilog/multiply_32.v(59): near "product_reg": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 21:44:42 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:54 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:44:54 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:55 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:44:55 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:44:55 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(36): (vlog-2110) Illegal reference to net "add_full_result".
+# ** Error: ../verilog/multiply_32.v(58): (vlog-2110) Illegal reference to net "add_full_result".
+# End time: 21:44:55 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:45:15 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:45:15 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:45:15 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:45:15 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:45:16 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 21:45:16 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:45:16 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 21:45:16 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 21:45:17 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 21:53:02 on Apr 24,2021, Elapsed time: 0:07:45
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:02 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:53:02 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:03 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:53:03 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:03 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(30): (vlog-2730) Undefined variable: 'add_full_result'.
+# End time: 21:53:03 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:23 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:53:23 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:24 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:53:24 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:24 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(59): (vlog-2110) Illegal reference to net "full_res".
+# ** Error: ../verilog/multiply_32.v(67): (vlog-2110) Illegal reference to net "full_res".
+# End time: 21:53:25 on Apr 24,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:46 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:53:46 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:47 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 21:53:47 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:47 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 21:53:47 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 21:53:48 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 21:53:48 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 21:53:48 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 22:08:10 on Apr 24,2021, Elapsed time: 0:14:22
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:10 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:08:10 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:11 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:08:11 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:11 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(28): (vlog-2730) Undefined variable: 'full_res'.
+# ** Error: ../verilog/multiply_32.v(63): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 22:08:11 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:52 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:08:52 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:53 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:08:53 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:08:54 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(62): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 22:08:54 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:10:37 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:10:37 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:10:38 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:10:38 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:10:38 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(61): A begin/end block was found with an empty body.  This is permitted in SystemVerilog, but not permitted in Verilog.  Please look for any stray semicolons.
+# End time: 22:10:38 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+# Error in macro ./scripts/tb_mul32.do line 9
+# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
+#     while executing
+# "vlog ../verilog/multiply_32.v"
+do scripts/tb_mul32.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:11:34 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:11:34 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:11:35 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:11:35 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:11:35 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 22:11:35 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:11:36 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 22:11:36 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 22:11:36 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+add wave  \
+sim:/tb_mul32/UUT/adder_cout \
+sim:/tb_mul32/UUT/adder_out
+do scripts/tb_mul32.do
+# End time: 22:17:14 on Apr 24,2021, Elapsed time: 0:05:38
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:17:14 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:17:14 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:17:14 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:17:14 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:17:15 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 22:17:15 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:17:15 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 22:17:15 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 22:17:16 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+add wave  \
+sim:/tb_mul32/UUT/add_sub0/cout
+add wave  \
+sim:/tb_mul32/UUT/add_sub0/cout
+do scripts/tb_mul32.do
+# End time: 22:24:08 on Apr 24,2021, Elapsed time: 0:06:52
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:24:08 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 22:24:08 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:24:09 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 22:24:09 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:24:09 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 22:24:09 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 22:24:10 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 22:24:10 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 22:24:10 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 23:13:24 on Apr 24,2021, Elapsed time: 0:49:14
+# Errors: 0, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:13:24 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 23:13:24 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:13:25 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 23:13:25 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:13:25 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 23:13:25 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:13:26 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 23:13:26 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 23:13:26 on Apr 24,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'opA'. The port definition is at: ../verilog/add_sub.v(1).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'sum'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'cout'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ovfl'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./scripts/tb_mul32.do PAUSED at line 14
-do scripts/tb_mul32.do
-# End time: 17:49:03 on Apr 24,2021, Elapsed time: 0:00:29
-# Errors: 3, Warnings: 1
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:49:03 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:49:03 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:49:03 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:49:03 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:49:04 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 17:49:04 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:49:04 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 17:49:04 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 17:49:05 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'sum'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'cout'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'ovfl'.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 27
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./scripts/tb_mul32.do PAUSED at line 14
-do scripts/tb_mul32.do
-# End time: 17:51:11 on Apr 24,2021, Elapsed time: 0:02:06
-# Errors: 3, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:51:11 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 17:51:11 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:51:12 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 17:51:12 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:51:12 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 17:51:12 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:51:12 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 17:51:12 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 17:51:13 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 23
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (33) for port 'opA'. The port definition is at: ../verilog/add_sub.v(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mul32/UUT/add_sub0 File: ../verilog/multiply_32.v Line: 23
 # 0 ps
-# 105 ns
-# Causality operation skipped due to absence of debug database file
+# 420 ns
 do scripts/tb_mul32.do
-# End time: 17:59:19 on Apr 24,2021, Elapsed time: 0:08:06
-# Errors: 0, Warnings: 1
+# End time: 23:20:26 on Apr 24,2021, Elapsed time: 0:07:00
+# Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:59:19 on Apr 24,2021
+# Start time: 23:20:26 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 17:59:19 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:20:26 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:59:20 on Apr 24,2021
+# Start time: 23:20:27 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 17:59:20 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:20:27 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:59:20 on Apr 24,2021
+# Start time: 23:20:27 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 17:59:20 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:20:28 on Apr 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 17:59:21 on Apr 24,2021
+# Start time: 23:20:28 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 17:59:21 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:20:28 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 17:59:21 on Apr 24,2021
+# Start time: 23:20:28 on Apr 24,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 105 ns
+# ** Error (suppressible): ../verilog/tb_mul32.v(17): (vopt-2912) Port 'cout' not found in module 'multiply_32' (9th connection).
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./scripts/tb_mul32.do PAUSED at line 14
 add wave  \
-sim:/tb_mul32/UUT/adder_cout \
-sim:/tb_mul32/UUT/adder_out \
-sim:/tb_mul32/UUT/clk \
-sim:/tb_mul32/UUT/cout \
-sim:/tb_mul32/UUT/cycle_counter \
-sim:/tb_mul32/UUT/enable \
-sim:/tb_mul32/UUT/multiplicand \
-sim:/tb_mul32/UUT/multiplicand_reg \
-sim:/tb_mul32/UUT/multiplier \
-sim:/tb_mul32/UUT/N \
-sim:/tb_mul32/UUT/ovfl \
-sim:/tb_mul32/UUT/product_lower \
-sim:/tb_mul32/UUT/product_reg \
-sim:/tb_mul32/UUT/product_upper \
-sim:/tb_mul32/UUT/ready \
-sim:/tb_mul32/UUT/reset
-do scripts/tb_mul32.d
-# Cannot open macro file: scripts/tb_mul32.d
+sim:/tb_mul32/UUT/add_sub0/cout
+# Unrecognized dataset prefix: sim
 do scripts/tb_mul32.do
-# End time: 18:03:24 on Apr 24,2021, Elapsed time: 0:04:03
+# End time: 23:20:59 on Apr 24,2021, Elapsed time: 0:00:31
 # Errors: 1, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:03:24 on Apr 24,2021
+# Start time: 23:20:59 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 18:03:24 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:20:59 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:03:25 on Apr 24,2021
+# Start time: 23:21:00 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 18:03:25 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:21:00 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:03:25 on Apr 24,2021
+# Start time: 23:21:00 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 18:03:25 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:21:00 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:03:26 on Apr 24,2021
+# Start time: 23:21:01 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 18:03:26 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:21:01 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:03:26 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 23:21:01 on Apr 24,2021
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 105 ns
-do scripts/tb_mul32.do
-# End time: 18:07:03 on Apr 24,2021, Elapsed time: 0:03:37
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:07:03 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:07:03 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:07:04 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:07:04 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:07:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:07:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:07:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# ** Error: (vlog-13069) ../verilog/tb_mul32.v(46): near "*": syntax error, unexpected '*'.
-# End time: 18:07:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 10
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/tb_mul32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:08:34 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:08:34 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:08:35 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:08:35 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:08:36 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:08:36 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:08:36 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:08:36 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:08:37 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 105 ns
-do scripts/tb_mul32.do
-# End time: 18:09:52 on Apr 24,2021, Elapsed time: 0:01:15
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:09:52 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:09:52 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:09:53 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:09:53 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:09:54 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:09:54 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:09:54 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:09:54 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:09:54 on Apr 24,2021
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 840 ns
-do scripts/tb_mul32.do
-# End time: 18:11:33 on Apr 24,2021, Elapsed time: 0:01:39
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:11:33 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:11:33 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:11:34 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:11:34 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:11:35 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:11:35 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:11:35 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:11:35 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:11:36 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 420 ns
-do scripts/tb_mul32.do
-# End time: 18:39:05 on Apr 24,2021, Elapsed time: 0:27:29
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:39:05 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:39:05 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:39:06 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:39:06 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:39:06 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:39:06 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:39:06 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:39:06 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:39:07 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 420 ns
-do scripts/tb_mul32.do
-# End time: 18:49:44 on Apr 24,2021, Elapsed time: 0:10:37
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:49:44 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:49:44 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:49:45 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:49:45 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:49:45 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# ** Error: ../verilog/multiply_32.v(54): (vlog-2110) Illegal reference to net "multiplicand_wire".
-# ** Error: ../verilog/multiply_32.v(55): (vlog-2110) Illegal reference to net "product_wire".
-# End time: 18:49:45 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-# Error in macro ./scripts/tb_mul32.do line 9
-# /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
-#     while executing
-# "vlog ../verilog/multiply_32.v"
-do scripts/tb_mul32.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:52:25 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:52:25 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:52:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:52:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:52:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:52:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:52:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:52:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:52:27 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 420 ns
-do scripts/tb_mul32.do
-# End time: 18:59:26 on Apr 24,2021, Elapsed time: 0:06:59
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:59:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 18:59:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:59:26 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 18:59:26 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:59:27 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 18:59:27 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 18:59:27 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 18:59:27 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 18:59:28 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# 0 ps
-# 420 ns
-do scripts/tb_mul32.do
-# End time: 19:01:29 on Apr 24,2021, Elapsed time: 0:02:01
-# Errors: 0, Warnings: 0
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
-# vmap work work 
-# Modifying modelsim.ini
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:01:29 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/full_adder.v 
-# -- Compiling module full_adder
-# 
-# Top level modules:
-# 	full_adder
-# End time: 19:01:29 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:01:30 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/add_sub.v 
-# -- Compiling module add_sub
-# 
-# Top level modules:
-# 	add_sub
-# End time: 19:01:30 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:01:30 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/multiply_32.v 
-# -- Compiling module multiply_32
-# 
-# Top level modules:
-# 	multiply_32
-# End time: 19:01:30 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:01:31 on Apr 24,2021
-# vlog -reportprogress 300 ../verilog/tb_mul32.v 
-# -- Compiling module tb_mul32
-# 
-# Top level modules:
-# 	tb_mul32
-# End time: 19:01:31 on Apr 24,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 19:01:31 on Apr 24,2021
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-# ** Error: invalid command name "sim:/tb_mul32/UUT/cycle_counter"
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 12
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/UUT/cout'.
 # Executing ONERROR command at macro ./scripts/wave_mul32.do line 28
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_mul32(fast)
@@ -2063,55 +1013,59 @@ do scripts/tb_mul32.do
 # 0 ps
 # 420 ns
 do scripts/tb_mul32.do
-# End time: 19:02:45 on Apr 24,2021, Elapsed time: 0:01:14
-# Errors: 3, Warnings: 0
+# End time: 23:25:44 on Apr 24,2021, Elapsed time: 0:04:43
+# Errors: 6, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:02:45 on Apr 24,2021
+# Start time: 23:25:44 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 19:02:45 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:25:44 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:02:46 on Apr 24,2021
+# Start time: 23:25:45 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 19:02:46 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:25:45 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:02:47 on Apr 24,2021
+# Start time: 23:25:46 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 19:02:47 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:25:46 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:02:47 on Apr 24,2021
+# Start time: 23:25:46 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 19:02:47 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:25:46 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 19:02:48 on Apr 24,2021
+# Start time: 23:25:47 on Apr 24,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 12
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/UUT/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 28
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
@@ -2120,55 +1074,59 @@ do scripts/tb_mul32.do
 # 0 ps
 # 420 ns
 do scripts/tb_mul32.do
-# End time: 19:05:29 on Apr 24,2021, Elapsed time: 0:02:41
-# Errors: 0, Warnings: 0
+# End time: 23:51:38 on Apr 24,2021, Elapsed time: 0:25:51
+# Errors: 6, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:05:29 on Apr 24,2021
+# Start time: 23:51:38 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 19:05:29 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:51:39 on Apr 24,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:05:30 on Apr 24,2021
+# Start time: 23:51:39 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 19:05:30 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:51:39 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:05:30 on Apr 24,2021
+# Start time: 23:51:40 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 19:05:30 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:51:40 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:05:31 on Apr 24,2021
+# Start time: 23:51:40 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 19:05:31 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:51:40 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 19:05:31 on Apr 24,2021
+# Start time: 23:51:40 on Apr 24,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 12
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/UUT/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 28
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
@@ -2176,48 +1134,98 @@ do scripts/tb_mul32.do
 # Loading work.full_adder(fast)
 # 0 ps
 # 420 ns
-add wave  \
-sim:/tb_mul32/UUT/add_sub0/opA \
-sim:/tb_mul32/UUT/add_sub0/opB \
-sim:/tb_mul32/UUT/add_sub0/sum
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_mul32(fast)
-# Loading work.multiply_32(fast)
-# Loading work.add_sub(fast)
-# Loading work.full_adder(fast)
-run -all
 do scripts/tb_mul32.do
-# End time: 19:16:59 on Apr 24,2021, Elapsed time: 0:11:28
-# Errors: 0, Warnings: 0
+# End time: 23:52:17 on Apr 24,2021, Elapsed time: 0:00:37
+# Errors: 6, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:16:59 on Apr 24,2021
+# Start time: 23:52:17 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 19:16:59 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:52:17 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:00 on Apr 24,2021
+# Start time: 23:52:18 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 19:17:00 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:52:18 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:01 on Apr 24,2021
+# Start time: 23:52:18 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
-# ** Error: (vlog-13069) ../verilog/multiply_32.v(83): near "end": syntax error, unexpected end.
-# End time: 19:17:01 on Apr 24,2021, Elapsed time: 0:00:00
+# 
+# Top level modules:
+# 	multiply_32
+# End time: 23:52:18 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:52:19 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/tb_mul32.v 
+# -- Compiling module tb_mul32
+# 
+# Top level modules:
+# 	tb_mul32
+# End time: 23:52:19 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
+# Start time: 23:52:19 on Apr 24,2021
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 12
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/UUT/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 28
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_mul32(fast)
+# Loading work.multiply_32(fast)
+# Loading work.add_sub(fast)
+# Loading work.full_adder(fast)
+# 0 ps
+# 420 ns
+do scripts/tb_mul32.do
+# End time: 23:55:45 on Apr 24,2021, Elapsed time: 0:03:26
+# Errors: 6, Warnings: 0
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.7a Lib Mapping Utility 2018.03 Mar 26 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:55:45 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 23:55:45 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:55:46 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/add_sub.v 
+# -- Compiling module add_sub
+# 
+# Top level modules:
+# 	add_sub
+# End time: 23:55:46 on Apr 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
+# Start time: 23:55:46 on Apr 24,2021
+# vlog -reportprogress 300 ../verilog/multiply_32.v 
+# -- Compiling module multiply_32
+# ** Error: ../verilog/multiply_32.v(66): (vlog-2730) Undefined variable: 'cycler_counter'.
+# End time: 23:55:46 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: /ensc/CMC/tools/mentor/modelsim.10.7a/modeltech/linux_x86_64/vlog failed.
 # Error in macro ./scripts/tb_mul32.do line 9
@@ -2230,48 +1238,52 @@ do scripts/tb_mul32.do
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:19 on Apr 24,2021
+# Start time: 23:55:58 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/full_adder.v 
 # -- Compiling module full_adder
 # 
 # Top level modules:
 # 	full_adder
-# End time: 19:17:19 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:55:58 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:19 on Apr 24,2021
+# Start time: 23:55:59 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/add_sub.v 
 # -- Compiling module add_sub
 # 
 # Top level modules:
 # 	add_sub
-# End time: 19:17:19 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:55:59 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:20 on Apr 24,2021
+# Start time: 23:55:59 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/multiply_32.v 
 # -- Compiling module multiply_32
 # 
 # Top level modules:
 # 	multiply_32
-# End time: 19:17:20 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:55:59 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.7a Compiler 2018.03 Mar 26 2018
-# Start time: 19:17:20 on Apr 24,2021
+# Start time: 23:56:00 on Apr 24,2021
 # vlog -reportprogress 300 ../verilog/tb_mul32.v 
 # -- Compiling module tb_mul32
 # 
 # Top level modules:
 # 	tb_mul32
-# End time: 19:17:20 on Apr 24,2021, Elapsed time: 0:00:00
+# End time: 23:56:00 on Apr 24,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui work.tb_mul32 -voptargs="+acc" -t 100ps 
-# Start time: 19:17:21 on Apr 24,2021
+# Start time: 23:56:00 on Apr 24,2021
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
 # Loading work.add_sub(fast)
 # Loading work.full_adder(fast)
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 12
+# ** Error: (vish-4014) No objects found matching '/tb_mul32/UUT/cout'.
+# Executing ONERROR command at macro ./scripts/wave_mul32.do line 28
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_mul32(fast)
 # Loading work.multiply_32(fast)
@@ -2279,5 +1291,5 @@ do scripts/tb_mul32.do
 # Loading work.full_adder(fast)
 # 0 ps
 # 420 ns
-# End time: 19:39:25 on Apr 24,2021, Elapsed time: 0:22:04
-# Errors: 0, Warnings: 0
+# End time: 23:58:29 on Apr 24,2021, Elapsed time: 0:02:29
+# Errors: 6, Warnings: 0
