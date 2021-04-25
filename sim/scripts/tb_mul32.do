@@ -6,16 +6,16 @@ vlib work
 vmap work work
 vlog ../verilog/full_adder.v
 vlog ../verilog/add_sub.v
-vlog ../verilog/learnverilog.v
-vlog ../verilog/learn_verilog_tb.v
+vlog ../verilog/multiply_32.v
+vlog ../verilog/tb_mul32.v
 #----------------------------------------------------------------------------------------------------------
 # Start the simulation
 #----------------------------------------------------------------------------------------------------------
-vsim -gui work.learn_verilog_tb -voptargs=+acc -t 100ps
-do wave_add_sub.do
+vsim -gui work.tb_mul32 -voptargs=+acc -t 100ps
+do wave_mul32.do
 #----------------------------------------------------------------------------------------------------------
 # Simulation Run
 #----------------------------------------------------------------------------------------------------------
 restart -f
-run 200 ns
+run 400 ns
 wave zoom full
